@@ -21,6 +21,10 @@ extension Poedator.MealTimeList.CalculatorView: View {
 	var body: some View {
 		Group {
 			Text("2")
+
+			Spacer()
+
+			FilledButton(title: "Save", action: viewModel.didTapSaveButton)
 		}
 		.padding()
 		.navigationBarTitle("Составить расписание приёмов пищи", displayMode: .inline)

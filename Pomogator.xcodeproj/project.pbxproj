@@ -34,7 +34,8 @@
 		1D6CC327261A50D6009380C9 /* Poedator.MealTimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC326261A50D6009380C9 /* Poedator.MealTimeList.swift */; };
 		1D6CC32F261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC32E261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift */; };
 		1D6CC333261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC332261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift */; };
-		1D6CC336261A58A2009380C9 /* FilledNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC335261A58A2009380C9 /* FilledNavigationButton.swift */; };
+		1D6CC339261A5A79009380C9 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC338261A5A79009380C9 /* Date+Extensions.swift */; };
+		1D6CC33C261A5A9A009380C9 /* Calendar.Component+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC33B261A5A9A009380C9 /* Calendar.Component+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +68,8 @@
 		1D6CC326261A50D6009380C9 /* Poedator.MealTimeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.swift; sourceTree = "<group>"; };
 		1D6CC32E261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.CalculatorView.swift; sourceTree = "<group>"; };
 		1D6CC332261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.CalculatorView.Model.swift; sourceTree = "<group>"; };
-		1D6CC335261A58A2009380C9 /* FilledNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledNavigationButton.swift; sourceTree = "<group>"; };
+		1D6CC338261A5A79009380C9 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		1D6CC33B261A5A9A009380C9 /* Calendar.Component+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar.Component+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +175,6 @@
 				1D6CC315261A46E5009380C9 /* Extensions */,
 				1D6CC2F4261A40E0009380C9 /* User notification center facade */,
 				1D6CC2CB261A3863009380C9 /* FilledButton.swift */,
-				1D6CC335261A58A2009380C9 /* FilledNavigationButton.swift */,
 				1D6CC31D261A48DF009380C9 /* FormatHelper.swift */,
 				1D6CC2D5261A3E97009380C9 /* UserDefaultsProtocol.swift */,
 			);
@@ -212,7 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				1D6CC306261A41E2009380C9 /* Calendar+Extensions.swift */,
+				1D6CC33B261A5A9A009380C9 /* Calendar.Component+Extensions.swift */,
 				1D6CC319261A47A0009380C9 /* Collection+Extensions.swift */,
+				1D6CC338261A5A79009380C9 /* Date+Extensions.swift */,
 				1D6CC300261A41BE009380C9 /* Locale+Extensions.swift */,
 				1D6CC303261A41CF009380C9 /* TimeZone+Extensions.swift */,
 			);
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6CC33C261A5A9A009380C9 /* Calendar.Component+Extensions.swift in Sources */,
 				1D6CC2E1261A3F65009380C9 /* PoedatorStorageFacadeOutputProtocol.swift in Sources */,
 				1D6CC2F6261A40ED009380C9 /* UserNotificationCenterFacadeProtocol.swift in Sources */,
 				1D6CC2D0261A3B00009380C9 /* Poedator.MealTimeList.View.Model.swift in Sources */,
@@ -354,6 +358,7 @@
 				1D6CC2CC261A3863009380C9 /* FilledButton.swift in Sources */,
 				1D6CC2DD261A3F49009380C9 /* PoedatorStorageFacadeInputProtocol.swift in Sources */,
 				1D6CC304261A41CF009380C9 /* TimeZone+Extensions.swift in Sources */,
+				1D6CC339261A5A79009380C9 /* Date+Extensions.swift in Sources */,
 				1D6CC2D6261A3E97009380C9 /* UserDefaultsProtocol.swift in Sources */,
 				1D6CC327261A50D6009380C9 /* Poedator.MealTimeList.swift in Sources */,
 				1D6CC333261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift in Sources */,
@@ -364,7 +369,6 @@
 				1D6CC2EA261A402B009380C9 /* Poedator.swift in Sources */,
 				1D6CC30F261A431E009380C9 /* Poedator.Assembly.swift in Sources */,
 				1D6CC2C4261A2548009380C9 /* Poedator.MealTimeList.View.swift in Sources */,
-				1D6CC336261A58A2009380C9 /* FilledNavigationButton.swift in Sources */,
 				1D100044261A1E2200CF7B23 /* PomogatorApp.swift in Sources */,
 				1D6CC307261A41E2009380C9 /* Calendar+Extensions.swift in Sources */,
 				1D6CC2E6261A3FF4009380C9 /* PoedatorMealRemindersManagerProtocol.swift in Sources */,

@@ -14,6 +14,7 @@ extension Poedator.MealTimeList {
 		}
 
 		@ObservedObject private var viewModel: Model
+		@State private var isShowingCalculator = false
 	}
 }
 
@@ -43,11 +44,25 @@ private extension Poedator.MealTimeList.View {
 				.font(.title)
 			Spacer()
 
-			FilledNavigationButton(
-				title: "Составить расписание",
-				destination: Poedator.Assembly.mealTimeListCalculatorView
-			)
+			ZStack {
+				NavigationLink(
+					destination: Poedator.Assembly.mealTimeListCalculatorView(closeScreen: closeCalculatorScreen),
+					isActive: $isShowingCalculator
+				) {
+					EmptyView()
+				}
+
+				FilledButton(title: "Составить расписание", action: showCalculatorScreen)
+			}
 		}
+	}
+
+	func showCalculatorScreen() {
+		isShowingCalculator = true
+	}
+
+	func closeCalculatorScreen() {
+		isShowingCalculator = false
 	}
 
 	var mealTimeList: some View {
