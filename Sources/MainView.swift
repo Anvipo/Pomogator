@@ -11,7 +11,6 @@ struct MainView {}
 
 extension MainView: View {
 	var body: some View {
-		Text("Hello, world!")
-			.padding()
+		Poedator.Assembly.mealTimeListView
 	}
 }

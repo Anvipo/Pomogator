@@ -8,7 +8,10 @@
 import SwiftUI
 
 @main
-struct PomogatorApp {}
+struct PomogatorApp {
+	// swiftlint:disable:next weak_delegate
+	@UIApplicationDelegateAdaptor private var appDelegate: PomogatorApplicationDelegate
+}
 
 extension PomogatorApp: App {
 	var body: some Scene {

@@ -11,6 +11,30 @@
 		1D100046261A1E2200CF7B23 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D100045261A1E2200CF7B23 /* MainView.swift */; };
 		1D100048261A1E2300CF7B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D100047261A1E2300CF7B23 /* Assets.xcassets */; };
 		1D10004B261A1E2300CF7B23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D10004A261A1E2300CF7B23 /* Preview Assets.xcassets */; };
+		1D6CC2C4261A2548009380C9 /* Poedator.MealTimeList.View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2C3261A2548009380C9 /* Poedator.MealTimeList.View.swift */; };
+		1D6CC2CC261A3863009380C9 /* FilledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2CB261A3863009380C9 /* FilledButton.swift */; };
+		1D6CC2D0261A3B00009380C9 /* Poedator.MealTimeList.View.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2CF261A3B00009380C9 /* Poedator.MealTimeList.View.Model.swift */; };
+		1D6CC2D3261A3DC0009380C9 /* Poedator.MealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2D2261A3DC0009380C9 /* Poedator.MealTime.swift */; };
+		1D6CC2D6261A3E97009380C9 /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2D5261A3E97009380C9 /* UserDefaultsProtocol.swift */; };
+		1D6CC2D9261A3F25009380C9 /* Poedator.StorageFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2D8261A3F25009380C9 /* Poedator.StorageFacade.swift */; };
+		1D6CC2DD261A3F49009380C9 /* PoedatorStorageFacadeInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2DC261A3F49009380C9 /* PoedatorStorageFacadeInputProtocol.swift */; };
+		1D6CC2E1261A3F65009380C9 /* PoedatorStorageFacadeOutputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2E0261A3F65009380C9 /* PoedatorStorageFacadeOutputProtocol.swift */; };
+		1D6CC2E6261A3FF4009380C9 /* PoedatorMealRemindersManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2E5261A3FF4009380C9 /* PoedatorMealRemindersManagerProtocol.swift */; };
+		1D6CC2EA261A402B009380C9 /* Poedator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2E9261A402B009380C9 /* Poedator.swift */; };
+		1D6CC2EF261A407B009380C9 /* Poedator.MealRemindersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2EE261A407B009380C9 /* Poedator.MealRemindersManager.swift */; };
+		1D6CC2F2261A40C8009380C9 /* UserNotificationCenterFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2F1261A40C8009380C9 /* UserNotificationCenterFacade.swift */; };
+		1D6CC2F6261A40ED009380C9 /* UserNotificationCenterFacadeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC2F5261A40ED009380C9 /* UserNotificationCenterFacadeProtocol.swift */; };
+		1D6CC301261A41BE009380C9 /* Locale+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC300261A41BE009380C9 /* Locale+Extensions.swift */; };
+		1D6CC304261A41CF009380C9 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC303261A41CF009380C9 /* TimeZone+Extensions.swift */; };
+		1D6CC307261A41E2009380C9 /* Calendar+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC306261A41E2009380C9 /* Calendar+Extensions.swift */; };
+		1D6CC30F261A431E009380C9 /* Poedator.Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC30E261A431E009380C9 /* Poedator.Assembly.swift */; };
+		1D6CC313261A45B3009380C9 /* PomogatorApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC312261A45B3009380C9 /* PomogatorApplicationDelegate.swift */; };
+		1D6CC31A261A47A0009380C9 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC319261A47A0009380C9 /* Collection+Extensions.swift */; };
+		1D6CC31E261A48DF009380C9 /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC31D261A48DF009380C9 /* FormatHelper.swift */; };
+		1D6CC327261A50D6009380C9 /* Poedator.MealTimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC326261A50D6009380C9 /* Poedator.MealTimeList.swift */; };
+		1D6CC32F261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC32E261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift */; };
+		1D6CC333261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC332261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift */; };
+		1D6CC336261A58A2009380C9 /* FilledNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CC335261A58A2009380C9 /* FilledNavigationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +44,30 @@
 		1D100047261A1E2300CF7B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D10004A261A1E2300CF7B23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1D10004C261A1E2300CF7B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D6CC2C3261A2548009380C9 /* Poedator.MealTimeList.View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.View.swift; sourceTree = "<group>"; };
+		1D6CC2CB261A3863009380C9 /* FilledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButton.swift; sourceTree = "<group>"; };
+		1D6CC2CF261A3B00009380C9 /* Poedator.MealTimeList.View.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.View.Model.swift; sourceTree = "<group>"; };
+		1D6CC2D2261A3DC0009380C9 /* Poedator.MealTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTime.swift; sourceTree = "<group>"; };
+		1D6CC2D5261A3E97009380C9 /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
+		1D6CC2D8261A3F25009380C9 /* Poedator.StorageFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.StorageFacade.swift; sourceTree = "<group>"; };
+		1D6CC2DC261A3F49009380C9 /* PoedatorStorageFacadeInputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoedatorStorageFacadeInputProtocol.swift; sourceTree = "<group>"; };
+		1D6CC2E0261A3F65009380C9 /* PoedatorStorageFacadeOutputProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoedatorStorageFacadeOutputProtocol.swift; sourceTree = "<group>"; };
+		1D6CC2E5261A3FF4009380C9 /* PoedatorMealRemindersManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoedatorMealRemindersManagerProtocol.swift; sourceTree = "<group>"; };
+		1D6CC2E9261A402B009380C9 /* Poedator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.swift; sourceTree = "<group>"; };
+		1D6CC2EE261A407B009380C9 /* Poedator.MealRemindersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealRemindersManager.swift; sourceTree = "<group>"; };
+		1D6CC2F1261A40C8009380C9 /* UserNotificationCenterFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationCenterFacade.swift; sourceTree = "<group>"; };
+		1D6CC2F5261A40ED009380C9 /* UserNotificationCenterFacadeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationCenterFacadeProtocol.swift; sourceTree = "<group>"; };
+		1D6CC300261A41BE009380C9 /* Locale+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extensions.swift"; sourceTree = "<group>"; };
+		1D6CC303261A41CF009380C9 /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
+		1D6CC306261A41E2009380C9 /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
+		1D6CC30E261A431E009380C9 /* Poedator.Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.Assembly.swift; sourceTree = "<group>"; };
+		1D6CC312261A45B3009380C9 /* PomogatorApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomogatorApplicationDelegate.swift; sourceTree = "<group>"; };
+		1D6CC319261A47A0009380C9 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		1D6CC31D261A48DF009380C9 /* FormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelper.swift; sourceTree = "<group>"; };
+		1D6CC326261A50D6009380C9 /* Poedator.MealTimeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.swift; sourceTree = "<group>"; };
+		1D6CC32E261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.CalculatorView.swift; sourceTree = "<group>"; };
+		1D6CC332261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poedator.MealTimeList.CalculatorView.Model.swift; sourceTree = "<group>"; };
+		1D6CC335261A58A2009380C9 /* FilledNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledNavigationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				1D100056261A1F4000CF7B23 /* App */,
+				1D6CC2CA261A3859009380C9 /* Common */,
 				1D100057261A1F4B00CF7B23 /* Flows */,
 			);
 			path = Sources;
@@ -81,6 +130,7 @@
 			children = (
 				1D100054261A1F1200CF7B23 /* Resources */,
 				1D100043261A1E2200CF7B23 /* PomogatorApp.swift */,
+				1D6CC312261A45B3009380C9 /* PomogatorApplicationDelegate.swift */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -89,8 +139,118 @@
 			isa = PBXGroup;
 			children = (
 				1D100045261A1E2200CF7B23 /* MainView.swift */,
+				1D6CC2C1261A2526009380C9 /* Poedator */,
 			);
 			name = Flows;
+			sourceTree = "<group>";
+		};
+		1D6CC2C1261A2526009380C9 /* Poedator */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC325261A50BD009380C9 /* Namespace */,
+				1D6CC30E261A431E009380C9 /* Poedator.Assembly.swift */,
+				1D6CC2D2261A3DC0009380C9 /* Poedator.MealTime.swift */,
+				1D6CC2E4261A3FE5009380C9 /* Meal reminders manager */,
+				1D6CC2DB261A3F3C009380C9 /* Storage facade */,
+				1D6CC32C261A5172009380C9 /* Screens */,
+			);
+			name = Poedator;
+			sourceTree = "<group>";
+		};
+		1D6CC2C2261A2530009380C9 /* Meal time list */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC324261A50B4009380C9 /* Namespace */,
+				1D6CC2C3261A2548009380C9 /* Poedator.MealTimeList.View.swift */,
+				1D6CC2CF261A3B00009380C9 /* Poedator.MealTimeList.View.Model.swift */,
+			);
+			name = "Meal time list";
+			sourceTree = "<group>";
+		};
+		1D6CC2CA261A3859009380C9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC315261A46E5009380C9 /* Extensions */,
+				1D6CC2F4261A40E0009380C9 /* User notification center facade */,
+				1D6CC2CB261A3863009380C9 /* FilledButton.swift */,
+				1D6CC335261A58A2009380C9 /* FilledNavigationButton.swift */,
+				1D6CC31D261A48DF009380C9 /* FormatHelper.swift */,
+				1D6CC2D5261A3E97009380C9 /* UserDefaultsProtocol.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		1D6CC2DB261A3F3C009380C9 /* Storage facade */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC2DC261A3F49009380C9 /* PoedatorStorageFacadeInputProtocol.swift */,
+				1D6CC2E0261A3F65009380C9 /* PoedatorStorageFacadeOutputProtocol.swift */,
+				1D6CC2D8261A3F25009380C9 /* Poedator.StorageFacade.swift */,
+			);
+			name = "Storage facade";
+			sourceTree = "<group>";
+		};
+		1D6CC2E4261A3FE5009380C9 /* Meal reminders manager */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC2E5261A3FF4009380C9 /* PoedatorMealRemindersManagerProtocol.swift */,
+				1D6CC2EE261A407B009380C9 /* Poedator.MealRemindersManager.swift */,
+			);
+			name = "Meal reminders manager";
+			sourceTree = "<group>";
+		};
+		1D6CC2F4261A40E0009380C9 /* User notification center facade */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC2F5261A40ED009380C9 /* UserNotificationCenterFacadeProtocol.swift */,
+				1D6CC2F1261A40C8009380C9 /* UserNotificationCenterFacade.swift */,
+			);
+			name = "User notification center facade";
+			sourceTree = "<group>";
+		};
+		1D6CC315261A46E5009380C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC306261A41E2009380C9 /* Calendar+Extensions.swift */,
+				1D6CC319261A47A0009380C9 /* Collection+Extensions.swift */,
+				1D6CC300261A41BE009380C9 /* Locale+Extensions.swift */,
+				1D6CC303261A41CF009380C9 /* TimeZone+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		1D6CC324261A50B4009380C9 /* Namespace */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC326261A50D6009380C9 /* Poedator.MealTimeList.swift */,
+			);
+			name = Namespace;
+			sourceTree = "<group>";
+		};
+		1D6CC325261A50BD009380C9 /* Namespace */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC2E9261A402B009380C9 /* Poedator.swift */,
+			);
+			name = Namespace;
+			sourceTree = "<group>";
+		};
+		1D6CC32C261A5172009380C9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC2C2261A2530009380C9 /* Meal time list */,
+				1D6CC32D261A517E009380C9 /* Calculator */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		1D6CC32D261A517E009380C9 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				1D6CC32E261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift */,
+				1D6CC332261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift */,
+			);
+			name = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,8 +343,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6CC2E1261A3F65009380C9 /* PoedatorStorageFacadeOutputProtocol.swift in Sources */,
+				1D6CC2F6261A40ED009380C9 /* UserNotificationCenterFacadeProtocol.swift in Sources */,
+				1D6CC2D0261A3B00009380C9 /* Poedator.MealTimeList.View.Model.swift in Sources */,
+				1D6CC2D3261A3DC0009380C9 /* Poedator.MealTime.swift in Sources */,
+				1D6CC313261A45B3009380C9 /* PomogatorApplicationDelegate.swift in Sources */,
+				1D6CC31E261A48DF009380C9 /* FormatHelper.swift in Sources */,
 				1D100046261A1E2200CF7B23 /* MainView.swift in Sources */,
+				1D6CC2EF261A407B009380C9 /* Poedator.MealRemindersManager.swift in Sources */,
+				1D6CC2CC261A3863009380C9 /* FilledButton.swift in Sources */,
+				1D6CC2DD261A3F49009380C9 /* PoedatorStorageFacadeInputProtocol.swift in Sources */,
+				1D6CC304261A41CF009380C9 /* TimeZone+Extensions.swift in Sources */,
+				1D6CC2D6261A3E97009380C9 /* UserDefaultsProtocol.swift in Sources */,
+				1D6CC327261A50D6009380C9 /* Poedator.MealTimeList.swift in Sources */,
+				1D6CC333261A51E1009380C9 /* Poedator.MealTimeList.CalculatorView.Model.swift in Sources */,
+				1D6CC301261A41BE009380C9 /* Locale+Extensions.swift in Sources */,
+				1D6CC32F261A51C7009380C9 /* Poedator.MealTimeList.CalculatorView.swift in Sources */,
+				1D6CC2F2261A40C8009380C9 /* UserNotificationCenterFacade.swift in Sources */,
+				1D6CC31A261A47A0009380C9 /* Collection+Extensions.swift in Sources */,
+				1D6CC2EA261A402B009380C9 /* Poedator.swift in Sources */,
+				1D6CC30F261A431E009380C9 /* Poedator.Assembly.swift in Sources */,
+				1D6CC2C4261A2548009380C9 /* Poedator.MealTimeList.View.swift in Sources */,
+				1D6CC336261A58A2009380C9 /* FilledNavigationButton.swift in Sources */,
 				1D100044261A1E2200CF7B23 /* PomogatorApp.swift in Sources */,
+				1D6CC307261A41E2009380C9 /* Calendar+Extensions.swift in Sources */,
+				1D6CC2E6261A3FF4009380C9 /* PoedatorMealRemindersManagerProtocol.swift in Sources */,
+				1D6CC2D9261A3F25009380C9 /* Poedator.StorageFacade.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
