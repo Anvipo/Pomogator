@@ -12,6 +12,23 @@ import UIKit
 
 extension Poedator.MealTimeList.CalculatorView {
 	final class Model: ObservableObject {
+		@Published var numberOfMealTimesTextFieldManager: TextFieldManager
+		@Published var inputedFirstMealTime: Date {
+			didSet {
+//				notificateAboutDidInputCorrectValue()
+//				inputedFirstMealTime.second = 0
+//				didInputValue()
+			}
+		}
+		@Published var inputedLastMealTime: Date {
+			didSet {
+//				notificateAboutDidInputCorrectValue()
+//				inputedLastMealTime.second = 0
+//				didInputValue()
+			}
+		}
+		@Published var mealTimeList: [Poedator.MealTime]
+
 		init(
 			storageFacade: PoedatorStorageFacadeInputProtocol,
 			closeScreen: @escaping () -> Void
@@ -21,10 +38,10 @@ extension Poedator.MealTimeList.CalculatorView {
 
 			inputedNumberOfMealTimes = 5
 
-			inputedFirstMealTime = Date()
+			var inputedFirstMealTime = Date()
 			inputedFirstMealTime.second = 0
 
-			inputedLastMealTime = Date()
+			var inputedLastMealTime = Date()
 			inputedLastMealTime.hour = 20
 			inputedLastMealTime.minute = 30
 			inputedLastMealTime.second = 0
@@ -33,14 +50,28 @@ extension Poedator.MealTimeList.CalculatorView {
 				inputedFirstMealTime.hour = 9
 				inputedFirstMealTime.minute = 0
 			}
+			self.inputedFirstMealTime = inputedFirstMealTime
+			self.inputedLastMealTime = inputedLastMealTime
+
+			numberOfMealTimesTextFieldManager = TextFieldManager(
+				id: UUID(),
+				inputedText: "\(inputedNumberOfMealTimes)"
+			)
+
+			mealTimeList = []
+			didInputValue()
+
+			numberOfMealTimesTextFieldManager.delegate = self
 		}
 
 		private let storageFacade: PoedatorStorageFacadeInputProtocol
 		private let closeScreen: () -> Void
 
+		private let numberOfMealTimesItemID = UUID()
+		private let firstMealTimeItemID = UUID()
+		private let lastMealTimeItemID = UUID()
+
 		private var inputedNumberOfMealTimes: UInt
-		private var inputedFirstMealTime: Date
-		private var inputedLastMealTime: Date
 
 		private var didInputWrongValueFeedbackGenerator: UINotificationFeedbackGenerator?
 		private var didInputCorrectValueFeedbackGenerator: UISelectionFeedbackGenerator?
@@ -50,18 +81,113 @@ extension Poedator.MealTimeList.CalculatorView {
 }
 
 extension Poedator.MealTimeList.CalculatorView.Model {
+	func numberOfMealTimesTextFieldDidBeginEditing() {
+		prepareDidInputCorrectValueFeedbackGenerator()
+		prepareDidInputWrongValueFeedbackGenerator()
+	}
+
+	func numberOfMealTimesTextFieldDidEndEditing() {
+		clearDidInputCorrectValueFeedbackGenerator()
+		clearDidInputWrongValueFeedbackGenerator()
+	}
+
 	func didTapSaveButton() {
-//		prepareDidSaveCalculatedMealTimeListFeedbackGenerator()
-//
-//		storageFacade.save(calculatedMealTimeList: calculatedMealTimeList)
-//		storageFacade.save(areMealTimeRemindersAdded: false)
-//
-//		notificateAboutDidSaveCalculatedMealTimeList()
-//		clearDidSaveCalculatedMealTimeListFeedbackGenerator()
+		prepareDidSaveCalculatedMealTimeListFeedbackGenerator()
+
+		storageFacade.save(calculatedMealTimeList: calculatedMealTimeList)
+		storageFacade.save(areMealTimeRemindersAdded: false)
+
+		notificateAboutDidSaveCalculatedMealTimeList()
+		clearDidSaveCalculatedMealTimeListFeedbackGenerator()
 
 		closeScreen()
 	}
 }
+
+extension Poedator.MealTimeList.CalculatorView.Model: TextFieldManagerDelegate {
+	func textFieldManagerShouldChange(
+		_ textFieldManager: TextFieldManager,
+		oldText: String,
+		to newText: String
+	) -> Bool {
+		guard textFieldManager.id == numberOfMealTimesTextFieldManager.id else {
+			return true
+		}
+
+		if newText.isEmpty {
+			return true
+		}
+
+		guard let possibleNumber = UInt(newText) else {
+			return false
+		}
+
+		let shouldChange = 2...9 ~= possibleNumber
+
+		if !shouldChange {
+			notificateAboutDidInputWrongValue()
+		}
+
+		return shouldChange
+	}
+
+	func textFieldManagerDidChangeText(_ textFieldManager: TextFieldManager) {
+		switch textFieldManager.id {
+		case numberOfMealTimesTextFieldManager.id:
+			guard let newValue = UInt(textFieldManager.inputedText) else {
+				notificateAboutDidInputWrongValue()
+				return
+			}
+			inputedNumberOfMealTimes = newValue
+			didInputValue()
+
+		default:
+			break
+		}
+
+		notificateAboutDidInputCorrectValue()
+	}
+}
+
+//extension Poedator.MealTimeList.CalculatorView.Model {
+//	func fieldsItemShouldChangeDate(
+//		_ item: InputFieldDateItemProtocol,
+//		newPossibleDate: Date
+//	) -> Bool {
+//		switch item.id {
+//		case Self.firstMealTimeItemID:
+//			return shouldChangeDateForFirstMealTimeItem(newPossibleDate: newPossibleDate)
+//
+//		case Self.lastMealTimeItemID:
+//			return shouldChangeDateForLastMealTimeItem(newPossibleDate: newPossibleDate)
+//
+//		default:
+//			return true
+//		}
+//	}
+//
+//	func fieldItem(
+//		_ item: InputFieldDateItemProtocol,
+//		didChange date: Date
+//	) {
+//		vc?.notificateAboutDidInputCorrectValue()
+//
+//		switch item.id {
+//		case Self.firstMealTimeItemID:
+//			inputedFirstMealTime = date
+//			inputedFirstMealTime.second = 0
+//			didInputValue()
+//
+//		case Self.lastMealTimeItemID:
+//			inputedLastMealTime = date
+//			inputedLastMealTime.second = 0
+//			didInputValue()
+//
+//		default:
+//			return
+//		}
+//	}
+//}
 
 private extension Poedator.MealTimeList.CalculatorView.Model {
 	// MARK: Did input wrong value feedback generator
@@ -107,6 +233,10 @@ private extension Poedator.MealTimeList.CalculatorView.Model {
 
 	func clearDidSaveCalculatedMealTimeListFeedbackGenerator() {
 		didSaveCalculatedMealTimeListFeedbackGenerator = nil
+	}
+
+	func didInputValue() {
+		mealTimeList = calculatedMealTimeList.enumerated().map(Poedator.MealTime.init(id:time:))
 	}
 
 	var calculatedMealTimeList: [Date] {
