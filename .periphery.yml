@@ -1,0 +1,39 @@
+build_arguments:
+- -destination
+- platform="iOS Simulator,name=iPhone 14 Pro,OS=17.0"
+#- platform="watchOS Simulator,name=Apple Watch Series 4 (40mm) via iPhone 8,OS=9.4"
+
+format: xcode
+
+disable_redundant_public_analysis: false
+disable_update_check: false
+external_encodable_protocols: false
+retain_assign_only_properties: false
+retain_assign_only_property_types: false
+retain_objc_accessible: false
+retain_public: false
+retain_unused_protocol_func_params: false
+
+clean_build: true
+skip_build: false
+
+#index_store_path: "DerivedData/Pomogator/Index.noindex/DataStore/"
+
+strict: false
+
+quiet: false
+verbose: true
+
+schemes:
+- App
+- AppWidgetExtension
+- WatchApp
+- WatchAppWidgetExtension
+
+targets:
+- App
+- AppWidgetExtension
+- WatchApp
+- WatchAppWidgetExtension
+
+project: Pomogator.xcodeproj
