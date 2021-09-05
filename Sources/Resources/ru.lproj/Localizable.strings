@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  Pomogator
+
+  Created by Anvipo on 03.09.2022.
+  
+*/
+
+"Yes" = "Да";
+"No" = "Нет";
+"OK" = "Хорошо";
+"Next" = "Далее";
+"Done" = "Готово";
+"Attention" = "Внимание";
+"Error" = "Ошибка";
+
+"Main" = "Главная";
+
+"No upcoming meal time schedule text" = "Нет\U00A0ближайшего приёма пищи на\U00A0сегодня";
+"No saved meal time schedule text" = "Нет\U00A0составленного расписания на\U00A0сегодня";
+
+"Poedator" = "Поедатор";
+
+"Poedator spotlight content description" = "Добавляйте напоминания, чтобы не забыть поесть!";
+"Fitness spotlight keyword" = "Фитнес";
+"Reminder spotlight keyword" = "Напоминание";
+"Food spotlight keyword" = "Еда";
+"To eat spotlight keyword 1" = "Есть";
+"To eat spotlight keyword 2" = "Кушать";
+"Meal spotlight keyword" = "Приём пищи";
+"Breakfast spotlight keyword" = "Завтрак";
+"Lunch spotlight keyword" = "Обед";
+"Snack spotlight keyword" = "Полдник";
+"Dinner spotlight keyword" = "Ужин";
+
+"Meal time schedule screen title" = "Расписание приёмов пищи";
+"Delete meal time reminders alert message" = "Хочешь удалить сохранённое расписание приёмов пищи?";
+"Go to app notification settings alert message" = "Ты\U00A0не\U00A0предоставил доступ к\U00A0показу уведомлений. Хочешь перейти в\U00A0настройки уведомлений приложения, чтобы предоставить доступ?";
+"Add meal time notifications button title" = "Добавить напоминания";
+"No saved meal time schedule text 1" = "Нет составленного расписания";
+"No saved meal time schedule text 2" = "Нажми \"+\" в правом верхнем углу,\U00A0чтобы перейти на\U00A0экран составления расписания";
+
+"Number of meal times field view title" = "Количество приёмов пищи";
+"First meal time field view title" = "Время первого приёма пищи";
+"Last meal time field view title" = "Время последнего приёма пищи";
+"Parameters section header" = "Параметры";
+"Calculated schedule for %@ section header" = "Составленное расписание на\U00A0%@";
+"Calculated schedule section header" = "Составленное расписание";
+"Calculated schedule for yesterday section header" = "Составленное расписание на вчера";
+"Calculated schedule for today section header" = "Составленное расписание на сегодня";
+"Calculated schedule for tomorrow section header" = "Составленное расписание на завтра";
+"Save calculated schedule button title" = "Сохранить составленное расписание";
+"Calculate meal time schedule screen title" = "Составить расписание приёмов пищи";
+
+"Yesterday in %@ meal time text" = "Вчера в\U00A0%@";
+"Today in %@ meal time text" = "Сегодня в\U00A0%@";
+"Tomorrow in %@ meal time text" = "Завтра в\U00A0%@";
+
+"Poedator notification title" = "Уведомление от\U00A0Поедатора";
+"Poedator breakfast notification body" = "Пора завтракать";
+"Poedator second breakfast notification body" = "Пора принимать второй завтрак";
+"Poedator lunch notification body" = "Пора обедать";
+"Poedator afternoon snack notification body" = "Пора принимать полдник";
+"Poedator dinner notification body" = "Пора ужинать";
+"Poedator notification №%@ body" = "Пора принимать приём пищи\U00A0№%@";

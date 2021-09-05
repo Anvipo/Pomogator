@@ -1,0 +1,65 @@
+/* 
+  Localizable.strings
+  Pomogator
+
+  Created by Anvipo on 03.09.2022.
+  
+*/
+
+"Yes" = "Yes";
+"No" = "No";
+"OK" = "OK";
+"Next" = "Next";
+"Done" = "Done";
+"Attention" = "Attention";
+"Error" = "Error";
+
+"Main" = "Main";
+
+"No upcoming meal time schedule text" = "No\U00A0upcoming meal time for\U00A0today";
+"No saved meal time schedule text" = "No\U00A0saved meal time schedule for\U00A0today";
+
+"Poedator" = "Poedator";
+
+"Poedator spotlight content description" = "Add reminders so you don't forget to eat!";
+"Fitness spotlight keyword" = "Fitness";
+"Reminder spotlight keyword" = "Reminder";
+"Food spotlight keyword" = "Food";
+"To eat spotlight keyword 1" = "To eat";
+"To eat spotlight keyword 2" = "To lunch";
+"Meal spotlight keyword" = "Meal";
+"Breakfast spotlight keyword" = "Breakfast";
+"Lunch spotlight keyword" = "Lunch";
+"Snack spotlight keyword" = "Snack";
+"Dinner spotlight keyword" = "Dinner";
+
+"Meal time schedule screen title" = "Meal time schedule";
+"Delete meal time reminders alert message" = "Do\U00A0you want to\U00A0delete saved meal time schedule?";
+"Go to app notification settings alert message" = "You didn't give permission to\U00A0send notifications. Do\U00A0you want to\U00A0go to\U00A0app notification settings to\U00A0give this permission?";
+"Add meal time notifications button title" = "Add notifications";
+"No saved meal time schedule text 1" = "No\U00A0saved meal time schedule";
+"No saved meal time schedule text 2" = "Tap \"+\" in\U00A0the\U00A0top right corner to\U00A0go to\U00A0calculator screen";
+
+"Number of meal times field view title" = "Number of\U00A0meal times";
+"First meal time field view title" = "First meal time";
+"Last meal time field view title" = "Last meal time";
+"Parameters section header" = "Parameters";
+"Calculated schedule for %@ section header" = "Calculated schedule for\U00A0%@";
+"Calculated schedule section header" = "Calculated schedule";
+"Calculated schedule for yesterday section header" = "Calculated schedule for yesterday";
+"Calculated schedule for today section header" = "Calculated schedule for today";
+"Calculated schedule for tomorrow section header" = "Calculated schedule for tomorrow";
+"Save calculated schedule button title" = "Save calculated schedule";
+"Calculate meal time schedule screen title" = "Calculate meal time schedule";
+
+"Yesterday in %@ meal time text" = "Yesterday in\U00A0%@";
+"Today in %@ meal time text" = "Today in\U00A0%@";
+"Tomorrow in %@ meal time text" = "Tomorrow in\U00A0%@";
+
+"Poedator notification title" = "Notification from\U00A0Poedator";
+"Poedator breakfast notification body" = "It's\U00A0time for\U00A0breakfast";
+"Poedator second breakfast notification body" = "It's\U00A0time for\U00A0second breakfast";
+"Poedator lunch notification body" = "It's\U00A0time for\U00A0lunch";
+"Poedator afternoon snack notification body" = "It's\U00A0time for\U00A0afternoon snack";
+"Poedator dinner notification body" = "It's\U00A0time for\U00A0dinner";
+"Poedator notification №%@ body" = "It's\U00A0time for\U00A0meal №%@";

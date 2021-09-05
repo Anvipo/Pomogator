@@ -1,0 +1,121 @@
+//
+//  BaseCoordinator.swift
+//  Pomogator
+//
+//  Created by Anvipo on 05.09.2021.
+//
+
+import UIKit
+
+@MainActor
+class BaseCoordinator {
+	let didChangeScreenFeedbackGenerator: UIImpactFeedbackGenerator
+
+	weak var transitionHandler: UIViewController?
+
+	init(didChangeScreenFeedbackGenerator: UIImpactFeedbackGenerator) {
+		self.didChangeScreenFeedbackGenerator = didChangeScreenFeedbackGenerator
+	}
+
+	func startFlow(from transitionHandler: UIViewController) {
+		self.transitionHandler = transitionHandler
+	}
+
+	func didTapBackButton(poppedVC: UIViewController?) {
+		didChangeScreenFeedbackGenerator.impactOccurred()
+	}
+}
+
+extension BaseCoordinator {
+	var currentActiveVC: BaseVC? {
+		if let navigationController = transitionHandler as? UINavigationController {
+			guard let topViewController = navigationController.topViewController else {
+				assertionFailure("?")
+				return nil
+			}
+
+			guard let topViewController = topViewController as? BaseVC else {
+				assertionFailure("?")
+				return nil
+			}
+
+			return topViewController
+		} else if let splitViewController = transitionHandler as? UISplitViewController {
+			if let detailViewController = splitViewController.detailVC {
+				guard let detailViewController = detailViewController as? BaseVC else {
+					assertionFailure("?")
+					return nil
+				}
+
+				return detailViewController
+			} else if let primaryVC = splitViewController.primaryVC {
+				guard let primaryVC = primaryVC as? BaseVC else {
+					assertionFailure("?")
+					return nil
+				}
+
+				return primaryVC
+			} else {
+				assertionFailure("?")
+				return nil
+			}
+		} else {
+			assertionFailure("?")
+			return nil
+		}
+	}
+
+	func showAlert(
+		title: String?,
+		message: String?,
+		actions: [UIAlertAction],
+		preferredAction: UIAlertAction
+	) {
+		guard let transitionHandler else {
+			assertionFailure("?")
+			return
+		}
+
+		let alertController = UIAlertController.alert(
+			title: title,
+			message: message,
+			actions: actions,
+			preferredAction: preferredAction
+		)
+		alertController.view.tintColor = Color.brand.uiColor
+
+		if let navigationController = transitionHandler as? UINavigationController {
+			navigationController.viewControllers.last?.present(alertController, animated: true)
+		} else if let splitViewController = transitionHandler as? UISplitViewController {
+			splitViewController.viewControllers.last?.present(alertController, animated: true)
+		} else {
+			assertionFailure("?")
+		}
+	}
+
+	// swiftlint:disable:next function_parameter_count
+	func showAlert(
+		title: String?,
+		message: String?,
+		yesActionStyle: UIAlertAction.Style,
+		noActionStyle: UIAlertAction.Style,
+		didTapYesAction: (() -> Void)?,
+		didTapNoAction: (() -> Void)?
+	) {
+		let yesAction = UIAlertAction(
+			title: String(localized: "Yes"),
+			style: yesActionStyle
+		) { _ in
+			didTapYesAction?()
+		}
+
+		let noAction = UIAlertAction(
+			title: String(localized: "No"),
+			style: noActionStyle
+		) { _ in
+			didTapNoAction?()
+		}
+
+		showAlert(title: title, message: message, actions: [yesAction, noAction], preferredAction: yesAction)
+	}
+}
