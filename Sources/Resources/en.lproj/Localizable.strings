@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  Pomogator
+
+  Created by Anvipo on 03.09.2022.
+  
+*/
+
+"Yes" = "Yes";
+"No" = "No";
+"OK" = "OK";
+"Next" = "Next";
+"Done" = "Done";
+"Attention" = "Attention";
+"Error" = "Error";
+
+"Main" = "Main";
+
+"Poedator" = "Poedator";
+
+"Meal time schedule" = "Meal time schedule";
+"Do you want to delete all calculated meal times?" = "Do you want to\U00A0delete all calculated meal times?";
+"You don't give permission to send notifications" = "You don't give permission to\U00A0send notifications. Do you want to\U00A0go app settings to\U00A0give this permission?";
+"Add notifications" = "Add notifications";
+"No calculated meal times" = "No\U00A0calculated meal times";
+"Go to meal times calculator screen" = "Tap \"+\" or \"Calculate meal time schedule\" to\U00A0go to\U00A0calculator screen";
+
+"Number of meal times" = "Number of\U00A0meal times";
+"First meal time" = "First meal time";
+"Last meal time" = "Last meal time";
+"Parameters" = "Parameters";
+"Calculated schedule for %@" = "Calculated schedule for\U00A0%@";
+"Calculated schedule" = "Calculated schedule";
+"Save calculated schedule" = "Save calculated schedule";
+"Calculate meal time schedule" = "Calculate meal time schedule";
+
+"Notification from Poedator" = "Notification from\U00A0Poedator";
+"It's time for breakfast" = "It's time for\U00A0breakfast";
+"It's time for second breakfast" = "It's time for\U00A0second breakfast";
+"It's time for lunch" = "It's time for\U00A0lunch";
+"It's time for afternoon snack" = "It's time for\U00A0afternoon snack";
+"It's time for dinner" = "It's time for\U00A0dinner";
+"It's time for %@" = "It's time for\U00A0meal №%@";

@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  Pomogator
+
+  Created by Anvipo on 03.09.2022.
+  
+*/
+
+"Yes" = "Да";
+"No" = "Нет";
+"OK" = "Хорошо";
+"Next" = "Далее";
+"Done" = "Готово";
+"Attention" = "Внимание";
+"Error" = "Ошибка";
+
+"Main" = "Главная";
+
+"Poedator" = "Поедатор";
+
+"Meal time schedule" = "Расписание приёмов пищи";
+"Do you want to delete all calculated meal times?" = "Хочешь удалить все составленные расписания?";
+"You don't give permission to send notifications" = "Ты не\U00A0предоставил доступ к\U00A0показу уведомлений. Хочешь перейти в\U00A0настройки приложения, чтобы предоставить доступ?";
+"Add notifications" = "Добавить напоминания";
+"No calculated meal times" = "Нет составленных расписаний";
+"Go to meal times calculator screen" = "Нажми \"+\" или \"Составить расписание приёмов\U00A0пищи\",\U00A0чтобы перейти на\U00A0экран\nсоставления расписания";
+
+"Number of meal times" = "Количество приёмов пищи";
+"First meal time" = "Время первого приёма пищи";
+"Last meal time" = "Время последнего приёма пищи";
+"Parameters" = "Параметры";
+"Calculated schedule for %@" = "Составленное расписание на\U00A0%@";
+"Calculated schedule" = "Составленное расписание";
+"Save calculated schedule" = "Сохранить составленное расписание";
+"Calculate meal time schedule" = "Составить расписание приёмов пищи";
+
+"Notification from Poedator" = "Уведомление от\U00A0Поедатора";
+"It's time for breakfast" = "Пора завтракать";
+"It's time for second breakfast" = "Пора принимать второй завтрак";
+"It's time for lunch" = "Пора обедать";
+"It's time for afternoon snack" = "Пора принимать полдник";
+"It's time for dinner" = "Пора ужинать";
+"It's time for %@" = "Пора принимать приём пищи №%@";
