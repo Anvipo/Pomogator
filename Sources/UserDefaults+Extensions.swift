@@ -12,6 +12,11 @@ extension UserDefaults {
 		object(forKey: key) as? UInt
 	}
 
+	func decimal(forKey key: String) -> Decimal? {
+		// swiftlint:disable:next legacy_objc_type
+		(object(forKey: key) as? NSNumber)?.decimalValue
+	}
+
 	func date(forKey key: String) -> Date? {
 		object(forKey: key) as? Date
 	}

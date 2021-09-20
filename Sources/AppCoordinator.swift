@@ -12,6 +12,7 @@ final class AppCoordinator: BaseCoordinator {
 	private let mainCoordinatorAssembly: MainCoordinatorAssembly
 	private let poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly
 	private let spotlightManager: SpotlightManager
+	private let vychislyatorAssembly: VychislyatorCoordinatorAssembly
 
 	private weak var application: UIApplication?
 	private weak var appTabBarController: (IRestorable & BaseTabBarController)?
@@ -22,6 +23,7 @@ final class AppCoordinator: BaseCoordinator {
 
 	private var mainCoordinator: MainCoordinator?
 	private var poedatorCoordinator: PoedatorCoordinator?
+	private var vychislyatorCoordinator: VychislyatorCoordinator?
 
 	init(
 		application: UIApplication,
@@ -31,6 +33,7 @@ final class AppCoordinator: BaseCoordinator {
 		mainCoordinatorAssembly: MainCoordinatorAssembly,
 		poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly,
 		spotlightManager: SpotlightManager,
+		vychislyatorAssembly: VychislyatorCoordinatorAssembly,
 		window: UIWindow,
 		windowScene: UIWindowScene
 	) {
@@ -40,6 +43,7 @@ final class AppCoordinator: BaseCoordinator {
 		self.mainCoordinatorAssembly = mainCoordinatorAssembly
 		self.poedatorCoordinatorAssembly = poedatorCoordinatorAssembly
 		self.spotlightManager = spotlightManager
+		self.vychislyatorAssembly = vychislyatorAssembly
 		self.window = window
 		self.windowScene = windowScene
 
@@ -93,17 +97,25 @@ extension AppCoordinator {
 		)
 		self.poedatorCoordinator = poedatorCoordinator
 
+		let (vychislyatorCoordinator, vychislyatorTransitionHandler) = vychislyatorAssembly.coordinatorAndTransitionHandler(
+			device: device,
+			windowScene: windowScene
+		)
+		self.vychislyatorCoordinator = vychislyatorCoordinator
+
 		let appTabBarController = assembly.appTabBarController(output: self)
 		self.appTabBarController = appTabBarController
 		appTabBarController.viewControllers = [
 			mainTransitionHandler,
-			poedatorTransitionHandler
+			poedatorTransitionHandler,
+			vychislyatorTransitionHandler
 		]
 
 		window.rootViewController = appTabBarController
 
 		mainCoordinator.startFlow(from: mainTransitionHandler)
 		poedatorCoordinator.startFlow(from: poedatorTransitionHandler)
+		vychislyatorCoordinator.startFlow(from: vychislyatorTransitionHandler)
 
 		indexSpotlight()
 	}
@@ -113,7 +125,48 @@ extension AppCoordinator {
 	}
 
 	func goToPoedator() {
-		appTabBarController?.selectedIndex = .poedatorTabIndex
+		guard let appTabBarController,
+			  let poedatorCoordinator
+		else {
+			assertionFailure("?")
+			return
+		}
+
+		appTabBarController.selectedIndex = .poedatorTabIndex
+		poedatorCoordinator.goToRootScreen(animated: false)
+	}
+
+	func goToVychislyator() {
+		guard let appTabBarController,
+			  let vychislyatorCoordinator
+		else {
+			assertionFailure("?")
+			return
+		}
+
+		appTabBarController.selectedIndex = .vychislyatorTabIndex
+
+		vychislyatorCoordinator.goToRootScreen(animated: false)
+	}
+
+	func goToDailyCalorieIntake() {
+		guard let vychislyatorCoordinator else {
+			assertionFailure("?")
+			return
+		}
+
+		goToVychislyator()
+		vychislyatorCoordinator.showDailyCalorieIntakeFormulasScreen(animated: false)
+	}
+
+	func goToBodyMassIndex() {
+		guard let vychislyatorCoordinator else {
+			assertionFailure("?")
+			return
+		}
+
+		goToVychislyator()
+		vychislyatorCoordinator.showBodyMassIndexScreen(animated: false)
 	}
 }
 
@@ -160,6 +213,9 @@ extension AppCoordinator: IAppTabBarControllerOutput {
 		case .poedatorTabIndex:
 			currentActiveCoordinator = poedatorCoordinator
 
+		case .vychislyatorTabIndex:
+			currentActiveCoordinator = vychislyatorCoordinator
+
 		default:
 			assertionFailure("?")
 		}
@@ -171,6 +227,15 @@ private extension AppCoordinator {
 		switch searchableItemActivityIdentifier {
 		case poedatorCoordinatorAssembly.spotlightSearchableUniqueIdentifier:
 			goToPoedator()
+
+		case vychislyatorAssembly.vychislyatorSpotlightSearchableUniqueIdentifier:
+			goToVychislyator()
+
+		case vychislyatorAssembly.dailyCalorieIntakeSpotlightSearchableUniqueIdentifier:
+			goToDailyCalorieIntake()
+
+		case vychislyatorAssembly.bodyMassIndexSpotlightSearchableUniqueIdentifier:
+			goToBodyMassIndex()
 
 		default:
 			assertionFailure("Нужно обработать идентификатор: \(searchableItemActivityIdentifier)")
@@ -185,7 +250,8 @@ private extension AppCoordinator {
 
 			do {
 				let textSearchableItems =
-				self.poedatorCoordinatorAssembly.spotlightSearchableItems
+				self.poedatorCoordinatorAssembly.spotlightSearchableItems +
+				self.vychislyatorAssembly.spotlightSearchableItems
 
 				try await self.spotlightManager.index(textSearchableItems: textSearchableItems)
 			} catch {
@@ -202,5 +268,9 @@ extension Int {
 
 	static var poedatorTabIndex: Self {
 		1
+	}
+
+	static var vychislyatorTabIndex: Self {
+		2
 	}
 }

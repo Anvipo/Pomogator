@@ -21,6 +21,46 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1D0ACC692981D180009464B5 /* MifflinStJeorCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC412981D17F009464B5 /* MifflinStJeorCalculator.swift */; };
+		1D0ACC6A2981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC422981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListVC.swift */; };
+		1D0ACC6B2981D180009464B5 /* VychislyatorFormulasListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC432981D17F009464B5 /* VychislyatorFormulasListPresenter.swift */; };
+		1D0ACC6C2981D180009464B5 /* PlainSpacerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC442981D17F009464B5 /* PlainSpacerItem.swift */; };
+		1D0ACC6D2981D180009464B5 /* VychislyatorBodyMassIndexUserDefaultsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC452981D17F009464B5 /* VychislyatorBodyMassIndexUserDefaultsFacade.swift */; };
+		1D0ACC6E2981D180009464B5 /* BodyMassIndexInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC462981D17F009464B5 /* BodyMassIndexInfo.swift */; };
+		1D0ACC6F2981D180009464B5 /* PickerFieldItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC472981D17F009464B5 /* PickerFieldItemContainer.swift */; };
+		1D0ACC702981D180009464B5 /* PlainSpacerItem.SpacerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC482981D17F009464B5 /* PlainSpacerItem.SpacerType.swift */; };
+		1D0ACC712981D180009464B5 /* PickerFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC492981D17F009464B5 /* PickerFieldView.swift */; };
+		1D0ACC722981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC4A2981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListPresenter.swift */; };
+		1D0ACC732981D180009464B5 /* VychislyatorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC4B2981D17F009464B5 /* VychislyatorCoordinator.swift */; };
+		1D0ACC742981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC4C2981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListSection.swift */; };
+		1D0ACC752981D180009464B5 /* PhysicalActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC4D2981D17F009464B5 /* PhysicalActivity.swift */; };
+		1D0ACC762981D180009464B5 /* PickerFieldItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC4E2981D17F009464B5 /* PickerFieldItemDelegate.swift */; };
+		1D0ACC772981D180009464B5 /* VychislyatorCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC4F2981D17F009464B5 /* VychislyatorCoordinatorAssembly.swift */; };
+		1D0ACC782981D180009464B5 /* PlainTextItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC502981D17F009464B5 /* PlainTextItem.swift */; };
+		1D0ACC792981D180009464B5 /* BodyMassIndexCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC512981D17F009464B5 /* BodyMassIndexCalculator.swift */; };
+		1D0ACC7A2981D180009464B5 /* PlainButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC522981D17F009464B5 /* PlainButtonItem.swift */; };
+		1D0ACC7B2981D180009464B5 /* VychislyatorFormulasListPopoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC532981D17F009464B5 /* VychislyatorFormulasListPopoverVC.swift */; };
+		1D0ACC7C2981D180009464B5 /* VychislyatorDailyCalorieIntakeUserDefaultsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC542981D17F009464B5 /* VychislyatorDailyCalorieIntakeUserDefaultsFacade.swift */; };
+		1D0ACC7D2981D180009464B5 /* VychislyatorBodyMassIndexAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC552981D17F009464B5 /* VychislyatorBodyMassIndexAssembly.swift */; };
+		1D0ACC7E2981D180009464B5 /* PlainButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC562981D17F009464B5 /* PlainButtonView.swift */; };
+		1D0ACC7F2981D180009464B5 /* ValuePickerFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC572981D17F009464B5 /* ValuePickerFieldItem.swift */; };
+		1D0ACC802981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC582981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListAssembly.swift */; };
+		1D0ACC812981D180009464B5 /* PickerFieldItemPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC592981D17F009464B5 /* PickerFieldItemPresentable.swift */; };
+		1D0ACC822981D180009464B5 /* PlainLabelFooterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC5A2981D17F009464B5 /* PlainLabelFooterItem.swift */; };
+		1D0ACC832981D180009464B5 /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC5B2981D17F009464B5 /* Decimal+Extensions.swift */; };
+		1D0ACC842981D180009464B5 /* PersonSex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC5C2981D17F009464B5 /* PersonSex.swift */; };
+		1D0ACC852981D180009464B5 /* VychislyatorFormulasListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC5D2981D17F009464B5 /* VychislyatorFormulasListAssembly.swift */; };
+		1D0ACC862981D180009464B5 /* PickerFieldItem.Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC5E2981D17F009464B5 /* PickerFieldItem.Content.swift */; };
+		1D0ACC872981D180009464B5 /* VychislyatorFormulasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC5F2981D17F009464B5 /* VychislyatorFormulasListVC.swift */; };
+		1D0ACC882981D180009464B5 /* VychislyatorBodyMassIndexVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC602981D17F009464B5 /* VychislyatorBodyMassIndexVC.swift */; };
+		1D0ACC892981D180009464B5 /* VychislyatorBodyMassIndexSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC612981D17F009464B5 /* VychislyatorBodyMassIndexSection.swift */; };
+		1D0ACC8A2981D180009464B5 /* VychislyatorFormulasListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC622981D17F009464B5 /* VychislyatorFormulasListSection.swift */; };
+		1D0ACC8B2981D180009464B5 /* PickerFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC632981D17F009464B5 /* PickerFieldItem.swift */; };
+		1D0ACC8C2981D180009464B5 /* PickerFieldItem.SelectedComponentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC642981D17F009464B5 /* PickerFieldItem.SelectedComponentInfo.swift */; };
+		1D0ACC8D2981D180009464B5 /* PlainSpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC652981D17F009464B5 /* PlainSpacerView.swift */; };
+		1D0ACC8E2981D180009464B5 /* LegacyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC662981D17F009464B5 /* LegacyExtensions.swift */; };
+		1D0ACC8F2981D180009464B5 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC672981D17F009464B5 /* String+Extensions.swift */; };
+		1D0ACC902981D180009464B5 /* VychislyatorBodyMassIndexPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0ACC682981D180009464B5 /* VychislyatorBodyMassIndexPresenter.swift */; };
 		1D0AD685297F3BD8004D8820 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AD684297F3BD8004D8820 /* SpotlightManager.swift */; };
 		1D0AD688297F3EAB004D8820 /* SpotlightSearchableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AD687297F3EAB004D8820 /* SpotlightSearchableItem.swift */; };
 		1D0AD68A297F403C004D8820 /* SpotlightSearchableItem.Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0AD689297F403C004D8820 /* SpotlightSearchableItem.Attributes.swift */; };
@@ -36,6 +76,7 @@
 		1D1E59BF26E552E500DCB626 /* StringFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E59BE26E552E500DCB626 /* StringFieldItem.swift */; };
 		1D1E59C126E5530900DCB626 /* StringFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E59C026E5530900DCB626 /* StringFieldView.swift */; };
 		1D27C2D32965BA7600F46B0C /* HasApplyChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D27C2D22965BA7600F46B0C /* HasApplyChanges.swift */; };
+		1D2848682981FD2500759E2C /* VychislyatorDailyCalorieIntakeFormulasListRestoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2848672981FD2500759E2C /* VychislyatorDailyCalorieIntakeFormulasListRestoreInfo.swift */; };
 		1D2E3067296B228800D37734 /* AppTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E3066296B228800D37734 /* AppTabBarController.swift */; };
 		1D2E3069296B230500D37734 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E3068296B230500D37734 /* UIImage+Extensions.swift */; };
 		1D36F823296367360068F423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D36F822296367360068F423 /* LaunchScreen.storyboard */; };
@@ -138,6 +179,8 @@
 		1DDD3BC72980A4B800A245D4 /* PoedatorCalculateMealTimeScheduleRestoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD3BC62980A4B800A245D4 /* PoedatorCalculateMealTimeScheduleRestoreInfo.swift */; };
 		1DDD3BC92980A5B400A245D4 /* IRestoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD3BC82980A5B400A245D4 /* IRestoreInfo.swift */; };
 		1DDDCFB62981E9DC0025468E /* PoedatorCoordinator.RestoredVCType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDCFB52981E9DC0025468E /* PoedatorCoordinator.RestoredVCType.swift */; };
+		1DDEF0692981F07500687B38 /* VychislyatorCoordinator.RestoredVCType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEF0682981F07500687B38 /* VychislyatorCoordinator.RestoredVCType.swift */; };
+		1DDEF06B2981F85B00687B38 /* VychislyatorBodyMassIndexRestoreInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDEF06A2981F85B00687B38 /* VychislyatorBodyMassIndexRestoreInfo.swift */; };
 		1DE6DE2328C3BCD300C8B205 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DE6DE2528C3BCD300C8B205 /* InfoPlist.strings */; };
 		1DF99DD528BBC11400085A15 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF99DD428BBC11400085A15 /* ButtonsView.swift */; };
 		1DF99DD728BBC13200085A15 /* ButtonsView.InitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF99DD628BBC13200085A15 /* ButtonsView.InitError.swift */; };
@@ -157,6 +200,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D0ACC412981D17F009464B5 /* MifflinStJeorCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MifflinStJeorCalculator.swift; sourceTree = "<group>"; };
+		1D0ACC422981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorDailyCalorieIntakeFormulasListVC.swift; sourceTree = "<group>"; };
+		1D0ACC432981D17F009464B5 /* VychislyatorFormulasListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorFormulasListPresenter.swift; sourceTree = "<group>"; };
+		1D0ACC442981D17F009464B5 /* PlainSpacerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainSpacerItem.swift; sourceTree = "<group>"; };
+		1D0ACC452981D17F009464B5 /* VychislyatorBodyMassIndexUserDefaultsFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorBodyMassIndexUserDefaultsFacade.swift; sourceTree = "<group>"; };
+		1D0ACC462981D17F009464B5 /* BodyMassIndexInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyMassIndexInfo.swift; sourceTree = "<group>"; };
+		1D0ACC472981D17F009464B5 /* PickerFieldItemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldItemContainer.swift; sourceTree = "<group>"; };
+		1D0ACC482981D17F009464B5 /* PlainSpacerItem.SpacerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainSpacerItem.SpacerType.swift; sourceTree = "<group>"; };
+		1D0ACC492981D17F009464B5 /* PickerFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldView.swift; sourceTree = "<group>"; };
+		1D0ACC4A2981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorDailyCalorieIntakeFormulasListPresenter.swift; sourceTree = "<group>"; };
+		1D0ACC4B2981D17F009464B5 /* VychislyatorCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorCoordinator.swift; sourceTree = "<group>"; };
+		1D0ACC4C2981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorDailyCalorieIntakeFormulasListSection.swift; sourceTree = "<group>"; };
+		1D0ACC4D2981D17F009464B5 /* PhysicalActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicalActivity.swift; sourceTree = "<group>"; };
+		1D0ACC4E2981D17F009464B5 /* PickerFieldItemDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldItemDelegate.swift; sourceTree = "<group>"; };
+		1D0ACC4F2981D17F009464B5 /* VychislyatorCoordinatorAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorCoordinatorAssembly.swift; sourceTree = "<group>"; };
+		1D0ACC502981D17F009464B5 /* PlainTextItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainTextItem.swift; sourceTree = "<group>"; };
+		1D0ACC512981D17F009464B5 /* BodyMassIndexCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodyMassIndexCalculator.swift; sourceTree = "<group>"; };
+		1D0ACC522981D17F009464B5 /* PlainButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainButtonItem.swift; sourceTree = "<group>"; };
+		1D0ACC532981D17F009464B5 /* VychislyatorFormulasListPopoverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorFormulasListPopoverVC.swift; sourceTree = "<group>"; };
+		1D0ACC542981D17F009464B5 /* VychislyatorDailyCalorieIntakeUserDefaultsFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorDailyCalorieIntakeUserDefaultsFacade.swift; sourceTree = "<group>"; };
+		1D0ACC552981D17F009464B5 /* VychislyatorBodyMassIndexAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorBodyMassIndexAssembly.swift; sourceTree = "<group>"; };
+		1D0ACC562981D17F009464B5 /* PlainButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainButtonView.swift; sourceTree = "<group>"; };
+		1D0ACC572981D17F009464B5 /* ValuePickerFieldItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValuePickerFieldItem.swift; sourceTree = "<group>"; };
+		1D0ACC582981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorDailyCalorieIntakeFormulasListAssembly.swift; sourceTree = "<group>"; };
+		1D0ACC592981D17F009464B5 /* PickerFieldItemPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldItemPresentable.swift; sourceTree = "<group>"; };
+		1D0ACC5A2981D17F009464B5 /* PlainLabelFooterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainLabelFooterItem.swift; sourceTree = "<group>"; };
+		1D0ACC5B2981D17F009464B5 /* Decimal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
+		1D0ACC5C2981D17F009464B5 /* PersonSex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSex.swift; sourceTree = "<group>"; };
+		1D0ACC5D2981D17F009464B5 /* VychislyatorFormulasListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorFormulasListAssembly.swift; sourceTree = "<group>"; };
+		1D0ACC5E2981D17F009464B5 /* PickerFieldItem.Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldItem.Content.swift; sourceTree = "<group>"; };
+		1D0ACC5F2981D17F009464B5 /* VychislyatorFormulasListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorFormulasListVC.swift; sourceTree = "<group>"; };
+		1D0ACC602981D17F009464B5 /* VychislyatorBodyMassIndexVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorBodyMassIndexVC.swift; sourceTree = "<group>"; };
+		1D0ACC612981D17F009464B5 /* VychislyatorBodyMassIndexSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorBodyMassIndexSection.swift; sourceTree = "<group>"; };
+		1D0ACC622981D17F009464B5 /* VychislyatorFormulasListSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorFormulasListSection.swift; sourceTree = "<group>"; };
+		1D0ACC632981D17F009464B5 /* PickerFieldItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldItem.swift; sourceTree = "<group>"; };
+		1D0ACC642981D17F009464B5 /* PickerFieldItem.SelectedComponentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerFieldItem.SelectedComponentInfo.swift; sourceTree = "<group>"; };
+		1D0ACC652981D17F009464B5 /* PlainSpacerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainSpacerView.swift; sourceTree = "<group>"; };
+		1D0ACC662981D17F009464B5 /* LegacyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacyExtensions.swift; sourceTree = "<group>"; };
+		1D0ACC672981D17F009464B5 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		1D0ACC682981D180009464B5 /* VychislyatorBodyMassIndexPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VychislyatorBodyMassIndexPresenter.swift; sourceTree = "<group>"; };
 		1D0AD684297F3BD8004D8820 /* SpotlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
 		1D0AD687297F3EAB004D8820 /* SpotlightSearchableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightSearchableItem.swift; sourceTree = "<group>"; };
 		1D0AD689297F403C004D8820 /* SpotlightSearchableItem.Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightSearchableItem.Attributes.swift; sourceTree = "<group>"; };
@@ -173,6 +256,7 @@
 		1D1E59BE26E552E500DCB626 /* StringFieldItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFieldItem.swift; sourceTree = "<group>"; };
 		1D1E59C026E5530900DCB626 /* StringFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFieldView.swift; sourceTree = "<group>"; };
 		1D27C2D22965BA7600F46B0C /* HasApplyChanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasApplyChanges.swift; sourceTree = "<group>"; };
+		1D2848672981FD2500759E2C /* VychislyatorDailyCalorieIntakeFormulasListRestoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VychislyatorDailyCalorieIntakeFormulasListRestoreInfo.swift; sourceTree = "<group>"; };
 		1D2E3066296B228800D37734 /* AppTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarController.swift; sourceTree = "<group>"; };
 		1D2E3068296B230500D37734 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		1D36F822296367360068F423 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -278,6 +362,8 @@
 		1DDD3BC62980A4B800A245D4 /* PoedatorCalculateMealTimeScheduleRestoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoedatorCalculateMealTimeScheduleRestoreInfo.swift; sourceTree = "<group>"; };
 		1DDD3BC82980A5B400A245D4 /* IRestoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRestoreInfo.swift; sourceTree = "<group>"; };
 		1DDDCFB52981E9DC0025468E /* PoedatorCoordinator.RestoredVCType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoedatorCoordinator.RestoredVCType.swift; sourceTree = "<group>"; };
+		1DDEF0682981F07500687B38 /* VychislyatorCoordinator.RestoredVCType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VychislyatorCoordinator.RestoredVCType.swift; sourceTree = "<group>"; };
+		1DDEF06A2981F85B00687B38 /* VychislyatorBodyMassIndexRestoreInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VychislyatorBodyMassIndexRestoreInfo.swift; sourceTree = "<group>"; };
 		1DE6DE2428C3BCD300C8B205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1DE6DE2628C3BCD700C8B205 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1DF99DD428BBC11400085A15 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
@@ -295,6 +381,168 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0ACC912981D1BD009464B5 /* Plain spacer */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC482981D17F009464B5 /* PlainSpacerItem.SpacerType.swift */,
+				1D0ACC442981D17F009464B5 /* PlainSpacerItem.swift */,
+				1D0ACC652981D17F009464B5 /* PlainSpacerView.swift */,
+			);
+			name = "Plain spacer";
+			sourceTree = "<group>";
+		};
+		1D0ACC922981D1DC009464B5 /* Vychislyator */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC972981D29F009464B5 /* Coordinator */,
+				1D0ACC982981D2B1009464B5 /* 4_Formulas list */,
+				1D0ACC9B2981D2F4009464B5 /* 5_Daily calorie intake */,
+				1D0ACC9E2981D346009464B5 /* 6_Body mass index */,
+			);
+			name = Vychislyator;
+			sourceTree = "<group>";
+		};
+		1D0ACC932981D221009464B5 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC942981D246009464B5 /* Value */,
+				1D0ACC5E2981D17F009464B5 /* PickerFieldItem.Content.swift */,
+				1D0ACC642981D17F009464B5 /* PickerFieldItem.SelectedComponentInfo.swift */,
+				1D0ACC632981D17F009464B5 /* PickerFieldItem.swift */,
+				1D0ACC472981D17F009464B5 /* PickerFieldItemContainer.swift */,
+				1D0ACC4E2981D17F009464B5 /* PickerFieldItemDelegate.swift */,
+				1D0ACC592981D17F009464B5 /* PickerFieldItemPresentable.swift */,
+				1D0ACC492981D17F009464B5 /* PickerFieldView.swift */,
+			);
+			name = Picker;
+			sourceTree = "<group>";
+		};
+		1D0ACC942981D246009464B5 /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC5C2981D17F009464B5 /* PersonSex.swift */,
+				1D0ACC4D2981D17F009464B5 /* PhysicalActivity.swift */,
+				1D0ACC572981D17F009464B5 /* ValuePickerFieldItem.swift */,
+			);
+			name = Value;
+			sourceTree = "<group>";
+		};
+		1D0ACC952981D25A009464B5 /* Plain button */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC522981D17F009464B5 /* PlainButtonItem.swift */,
+				1D0ACC562981D17F009464B5 /* PlainButtonView.swift */,
+			);
+			name = "Plain button";
+			sourceTree = "<group>";
+		};
+		1D0ACC962981D26F009464B5 /* Plain text */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC502981D17F009464B5 /* PlainTextItem.swift */,
+			);
+			name = "Plain text";
+			sourceTree = "<group>";
+		};
+		1D0ACC972981D29F009464B5 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC4B2981D17F009464B5 /* VychislyatorCoordinator.swift */,
+				1DDEF0682981F07500687B38 /* VychislyatorCoordinator.RestoredVCType.swift */,
+				1D0ACC4F2981D17F009464B5 /* VychislyatorCoordinatorAssembly.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		1D0ACC982981D2B1009464B5 /* 4_Formulas list */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC5D2981D17F009464B5 /* VychislyatorFormulasListAssembly.swift */,
+				1D0ACC992981D2CE009464B5 /* Presenter */,
+				1D0ACC9A2981D2DB009464B5 /* View */,
+			);
+			name = "4_Formulas list";
+			sourceTree = "<group>";
+		};
+		1D0ACC992981D2CE009464B5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC432981D17F009464B5 /* VychislyatorFormulasListPresenter.swift */,
+				1D0ACC622981D17F009464B5 /* VychislyatorFormulasListSection.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		1D0ACC9A2981D2DB009464B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC532981D17F009464B5 /* VychislyatorFormulasListPopoverVC.swift */,
+				1D0ACC5F2981D17F009464B5 /* VychislyatorFormulasListVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1D0ACC9B2981D2F4009464B5 /* 5_Daily calorie intake */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC582981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListAssembly.swift */,
+				1D0ACC9C2981D31D009464B5 /* Presenter */,
+				1D0ACC9D2981D331009464B5 /* View */,
+			);
+			name = "5_Daily calorie intake";
+			sourceTree = "<group>";
+		};
+		1D0ACC9C2981D31D009464B5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC412981D17F009464B5 /* MifflinStJeorCalculator.swift */,
+				1D0ACC4A2981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListPresenter.swift */,
+				1D2848672981FD2500759E2C /* VychislyatorDailyCalorieIntakeFormulasListRestoreInfo.swift */,
+				1D0ACC4C2981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListSection.swift */,
+				1D0ACC542981D17F009464B5 /* VychislyatorDailyCalorieIntakeUserDefaultsFacade.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		1D0ACC9D2981D331009464B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC422981D17F009464B5 /* VychislyatorDailyCalorieIntakeFormulasListVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1D0ACC9E2981D346009464B5 /* 6_Body mass index */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC552981D17F009464B5 /* VychislyatorBodyMassIndexAssembly.swift */,
+				1D0ACC9F2981D35A009464B5 /* Presenter */,
+				1D0ACCA02981D36A009464B5 /* View */,
+			);
+			name = "6_Body mass index";
+			sourceTree = "<group>";
+		};
+		1D0ACC9F2981D35A009464B5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC462981D17F009464B5 /* BodyMassIndexInfo.swift */,
+				1D0ACC512981D17F009464B5 /* BodyMassIndexCalculator.swift */,
+				1D0ACC682981D180009464B5 /* VychislyatorBodyMassIndexPresenter.swift */,
+				1DDEF06A2981F85B00687B38 /* VychislyatorBodyMassIndexRestoreInfo.swift */,
+				1D0ACC612981D17F009464B5 /* VychislyatorBodyMassIndexSection.swift */,
+				1D0ACC452981D17F009464B5 /* VychislyatorBodyMassIndexUserDefaultsFacade.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		1D0ACCA02981D36A009464B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D0ACC602981D17F009464B5 /* VychislyatorBodyMassIndexVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1D0AD686297F3EA0004D8820 /* Spotlight */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,7 +558,10 @@
 			children = (
 				1D10C57727009D5D00480DBC /* Field */,
 				1DD4CC1D28B1917200DB547C /* IItem.swift */,
+				1D0ACC952981D25A009464B5 /* Plain button */,
 				1DB33ED8296F1BBB008D3A36 /* Plain label */,
+				1D0ACC912981D1BD009464B5 /* Plain spacer */,
+				1D0ACC962981D26F009464B5 /* Plain text */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -320,6 +571,7 @@
 			children = (
 				1DB33ECC296E37C4008D3A36 /* Base */,
 				1DC6726D26ED17BF00CBE954 /* Date */,
+				1D0ACC932981D221009464B5 /* Picker */,
 				1D1E59BD26E5527800DCB626 /* String */,
 			);
 			name = Field;
@@ -343,14 +595,17 @@
 				1DD4CBE128B166AB00DB547C /* CGFloat+Extensions.swift */,
 				1DD4CC0928B16EA100DB547C /* CGSize+Extensions.swift */,
 				1DD4CC0728B16E7900DB547C /* CGSize.ProportionallySizingError.swift */,
+				1D0ACC5B2981D17F009464B5 /* Decimal+Extensions.swift */,
 				1D27C2D22965BA7600F46B0C /* HasApplyChanges.swift */,
 				1D8F5C7F296CE187006ECBD0 /* HasConvenientAddAction.swift */,
 				1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */,
 				1D36F8372963A9120068F423 /* LayoutConstraintRelation.swift */,
+				1D0ACC662981D17F009464B5 /* LegacyExtensions.swift */,
 				1DD4CC2628B2A91100DB547C /* NotificationCenter+Extensions.swift */,
 				1DD4CC0528B16E0D00DB547C /* NSDirectionalEdgeInsets+Extensions.swift */,
 				1DB33E7F296E2BD1008D3A36 /* Result+Extensions.swift */,
 				1D9E790628BAC7E800258D30 /* Sequence+Extensions.swift */,
+				1D0ACC672981D17F009464B5 /* String+Extensions.swift */,
 				1DD4CBFD28B16CB800DB547C /* TimeInterval+Extensions.swift */,
 				1DD4CC0328B16D8000DB547C /* UIAlertController+Extensions.swift */,
 				1D98262926EE7E83006CF3F9 /* UIApplication+Extensions.swift */,
@@ -498,6 +753,7 @@
 			children = (
 				1D86B4052972D9960065DBDE /* Main */,
 				1D6CA4CA26E4A9A20065F307 /* Poedator */,
+				1D0ACC922981D1DC009464B5 /* Vychislyator */,
 			);
 			name = Flows;
 			sourceTree = "<group>";
@@ -690,6 +946,7 @@
 			children = (
 				1DD4CC1428B188B400DB547C /* PlainLabelItem.swift */,
 				1DD4CC2B28BA6F5500DB547C /* PlainLabelHeaderItem.swift */,
+				1D0ACC5A2981D17F009464B5 /* PlainLabelFooterItem.swift */,
 			);
 			name = "Plain label";
 			sourceTree = "<group>";
@@ -880,34 +1137,44 @@
 			files = (
 				1DDD3BC5298099E500A245D4 /* BaseTabBarController.swift in Sources */,
 				1D36F8382963A9120068F423 /* LayoutConstraintRelation.swift in Sources */,
+				1D0ACC6C2981D180009464B5 /* PlainSpacerItem.swift in Sources */,
 				1D8F5C6C296CC8D3006ECBD0 /* ConvenientHitAreaCalculator.swift in Sources */,
 				1DB33E80296E2BD1008D3A36 /* Result+Extensions.swift in Sources */,
 				1DD4CC3628BA7A1E00DB547C /* ITableViewHeaderFooterItem.swift in Sources */,
 				1D3CB32E296F93BB007CF7F4 /* UIViewPropertyAnimator+Extensions.swift in Sources */,
 				1D2E3067296B228800D37734 /* AppTabBarController.swift in Sources */,
 				1DDD3BC72980A4B800A245D4 /* PoedatorCalculateMealTimeScheduleRestoreInfo.swift in Sources */,
+				1D2848682981FD2500759E2C /* VychislyatorDailyCalorieIntakeFormulasListRestoreInfo.swift in Sources */,
 				1DD4CC1528B188B400DB547C /* PlainLabelItem.swift in Sources */,
+				1D0ACC8E2981D180009464B5 /* LegacyExtensions.swift in Sources */,
 				1DF99DD728BBC13200085A15 /* ButtonsView.InitError.swift in Sources */,
+				1D0ACC762981D180009464B5 /* PickerFieldItemDelegate.swift in Sources */,
 				1DC6726F26ED17D100CBE954 /* DateFieldItem.swift in Sources */,
 				1DD4CBF528B16BA400DB547C /* BaseVC.swift in Sources */,
 				1DB9E24F29819F5B0034FBD4 /* IRestorable.swift in Sources */,
 				1D778C4329737A7700573B6F /* MainSection.swift in Sources */,
 				1D778C482973802E00573B6F /* MainCoordinator.swift in Sources */,
 				1DD4CC1E28B1917200DB547C /* IItem.swift in Sources */,
+				1D0ACC822981D180009464B5 /* PlainLabelFooterItem.swift in Sources */,
 				1DB33E2F296CEEF1008D3A36 /* UIColor+Extensions.swift in Sources */,
 				1D4FC64D297B16E800469ACB /* ReusableTableViewHeaderFooterItem.swift in Sources */,
 				1D2E3069296B230500D37734 /* UIImage+Extensions.swift in Sources */,
 				1DB9E24D29819B2C0034FBD4 /* IAppTabBarControllerOutput.swift in Sources */,
 				1DB33E49296DE981008D3A36 /* UIColor.HSBAComponents.swift in Sources */,
 				1D19F07926EE4A3400211BA4 /* UserDefaults+Extensions.swift in Sources */,
+				1DDEF0692981F07500687B38 /* VychislyatorCoordinator.RestoredVCType.swift in Sources */,
 				1D95AF4C293159AE000AEEFC /* Image.swift in Sources */,
+				1DDEF06B2981F85B00687B38 /* VychislyatorBodyMassIndexRestoreInfo.swift in Sources */,
 				1D6CA4B226E49F320065F307 /* PoedatorSavedMealTimeScheduleVC.swift in Sources */,
 				1DC6728426EDDE4500CBE954 /* Color.swift in Sources */,
 				1DC4E33B2973281700EC6846 /* MainVC.swift in Sources */,
 				1D9E790528BAB9C600258D30 /* PoedatorSavedMealTimeScheduleSection.swift in Sources */,
+				1D0ACC7D2981D180009464B5 /* VychislyatorBodyMassIndexAssembly.swift in Sources */,
 				1DD4CC1028B1705100DB547C /* UIScrollView+Extensions.swift in Sources */,
+				1D0ACC712981D180009464B5 /* PickerFieldView.swift in Sources */,
 				1DD4CBEE28B1697D00DB547C /* UIView.ConstraintsMakeInfo.swift in Sources */,
 				1DC6727826ED1EA400CBE954 /* DateFieldItem.Content.swift in Sources */,
+				1D0ACC782981D180009464B5 /* PlainTextItem.swift in Sources */,
 				1D63AC9928CCCB6600779F9E /* FieldItemContainer.swift in Sources */,
 				1D95AF4E29316B34000AEEFC /* TableViewSection.InitError.swift in Sources */,
 				1DD4CBFE28B16CB800DB547C /* TimeInterval+Extensions.swift in Sources */,
@@ -919,54 +1186,78 @@
 				1D19F07626EE47AD00211BA4 /* UserDefaultsFacade.swift in Sources */,
 				1DDD3BC92980A5B400A245D4 /* IRestoreInfo.swift in Sources */,
 				1DD4CBF728B16C1100DB547C /* KeyboardNotification.swift in Sources */,
+				1D0ACC8B2981D180009464B5 /* PickerFieldItem.swift in Sources */,
 				1D39EA8A26EE148000EE5F3E /* DateFieldItemDelegate.swift in Sources */,
 				1D0AD688297F3EAB004D8820 /* SpotlightSearchableItem.swift in Sources */,
+				1D0ACC802981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListAssembly.swift in Sources */,
 				1DD4CBEA28B1692400DB547C /* UIView.ConstraintMakeInfo.swift in Sources */,
+				1D0ACC722981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListPresenter.swift in Sources */,
+				1D0ACC6E2981D180009464B5 /* BodyMassIndexInfo.swift in Sources */,
 				1D778C4529737E6900573B6F /* MainAssembly.swift in Sources */,
 				1D10C57B27009DBE00480DBC /* FieldItemDelegate.swift in Sources */,
 				1D10C57927009D6700480DBC /* FieldItem.swift in Sources */,
 				1DC4E33D29732AA200EC6846 /* AnyTableViewItem.swift in Sources */,
+				1D0ACC772981D180009464B5 /* VychislyatorCoordinatorAssembly.swift in Sources */,
 				1D0AD68A297F403C004D8820 /* SpotlightSearchableItem.Attributes.swift in Sources */,
+				1D0ACC8C2981D180009464B5 /* PickerFieldItem.SelectedComponentInfo.swift in Sources */,
 				1DD4CBFA28B16C5F00DB547C /* KeyboardNotification.MapFromNotificationError.swift in Sources */,
+				1D0ACC7A2981D180009464B5 /* PlainButtonItem.swift in Sources */,
 				1D6CA4E326E4C27E0065F307 /* PoedatorSavedMealTimeSchedulePresenter.swift in Sources */,
 				1DF99DD528BBC11400085A15 /* ButtonsView.swift in Sources */,
+				1D0ACC812981D180009464B5 /* PickerFieldItemPresentable.swift in Sources */,
 				1D778C4A2973805800573B6F /* MainCoordinatorAssembly.swift in Sources */,
 				1D98262826EE7D20006CF3F9 /* UserNotificationCenterFacade.swift in Sources */,
 				1DDDCFB62981E9DC0025468E /* PoedatorCoordinator.RestoredVCType.swift in Sources */,
 				1D8F5C70296CCA4F006ECBD0 /* UIEdgeInsets+Extensions.swift in Sources */,
 				1DD4CBE828B168BB00DB547C /* UIView+Extensions.swift in Sources */,
 				1DC6727126ED18BF00CBE954 /* DateFieldView.swift in Sources */,
+				1D0ACC732981D180009464B5 /* VychislyatorCoordinator.swift in Sources */,
 				1D88D17C297D31AF009BF4F2 /* PoedatorUserDefaultsFacade.swift in Sources */,
 				1D1E59AA26E525CE00DCB626 /* PoedatorCalculateMealTimeScheduleVC.swift in Sources */,
 				1DD4CC1728B18C3400DB547C /* PoedatorCalculateMealTimeScheduleSection.swift in Sources */,
 				1D8F5C65296B3FBD006ECBD0 /* BaseAssembly.swift in Sources */,
 				1DD4CBE228B166AB00DB547C /* CGFloat+Extensions.swift in Sources */,
+				1D0ACC8F2981D180009464B5 /* String+Extensions.swift in Sources */,
 				1D7081CF296A4BCD00EC5DBA /* Array+Extension.swift in Sources */,
 				1DD4CBF028B16B0700DB547C /* BaseViewOutput.swift in Sources */,
 				1D6CA4E026E4C1F40065F307 /* BasePresenter.swift in Sources */,
+				1D0ACC7F2981D180009464B5 /* ValuePickerFieldItem.swift in Sources */,
 				1D778C4C29744EA400573B6F /* Button.FullConfiguration.swift in Sources */,
 				1D6335D626FF268F00F9F4F8 /* PoedatorCalculateMealTimeScheduleAssembly.swift in Sources */,
+				1D0ACC7B2981D180009464B5 /* VychislyatorFormulasListPopoverVC.swift in Sources */,
+				1D0ACC7E2981D180009464B5 /* PlainButtonView.swift in Sources */,
 				1D43BB5A29560C8400E46926 /* UISplitViewController+Extensions.swift in Sources */,
+				1D0ACC902981D180009464B5 /* VychislyatorBodyMassIndexPresenter.swift in Sources */,
 				1DD4CBE628B1681400DB547C /* CurrentResponderProvider.swift in Sources */,
+				1D0ACC842981D180009464B5 /* PersonSex.swift in Sources */,
 				1D6CA4DD26E4BC5A0065F307 /* PoedatorCoordinatorAssembly.swift in Sources */,
 				1DB33E7C296E2AD9008D3A36 /* Hasher+Extensions.swift in Sources */,
 				1D9E790728BAC7E800258D30 /* Sequence+Extensions.swift in Sources */,
 				1DD4CC0828B16E7900DB547C /* CGSize.ProportionallySizingError.swift in Sources */,
 				1DDD3BC12980966200A245D4 /* AppCoordinator.StartOption.swift in Sources */,
 				1D36F83629638B250068F423 /* UIView.SameAnchorConstraintsWithInfo.swift in Sources */,
+				1D0ACC702981D180009464B5 /* PlainSpacerItem.SpacerType.swift in Sources */,
+				1D0ACC892981D180009464B5 /* VychislyatorBodyMassIndexSection.swift in Sources */,
 				1DD4CC0C28B16F5100DB547C /* Button.swift in Sources */,
+				1D0ACC7C2981D180009464B5 /* VychislyatorDailyCalorieIntakeUserDefaultsFacade.swift in Sources */,
 				1DD4CC3228BA784300DB547C /* BlurredView.swift in Sources */,
+				1D0ACC832981D180009464B5 /* Decimal+Extensions.swift in Sources */,
 				1D6CA4D726E4BBDE0065F307 /* BaseCoordinator.swift in Sources */,
+				1D0ACC8D2981D180009464B5 /* PlainSpacerView.swift in Sources */,
+				1D0ACC6A2981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListVC.swift in Sources */,
 				1D1E59BF26E552E500DCB626 /* StringFieldItem.swift in Sources */,
 				1D98262A26EE7E83006CF3F9 /* UIApplication+Extensions.swift in Sources */,
 				1D1E59C126E5530900DCB626 /* StringFieldView.swift in Sources */,
+				1D0ACC6B2981D180009464B5 /* VychislyatorFormulasListPresenter.swift in Sources */,
 				1DD4CC0428B16D8000DB547C /* UIAlertController+Extensions.swift in Sources */,
 				1D98262626EE7CAB006CF3F9 /* PoedatorSavedMealTimeScheduleRemindersManager.swift in Sources */,
 				1D0AD685297F3BD8004D8820 /* SpotlightManager.swift in Sources */,
 				1D8E4A5326F901370036ADD2 /* AppCoordinator.swift in Sources */,
 				1D6CA4CE26E4A9EC0065F307 /* PoedatorSavedMealTimeScheduleVC.EmptyView.swift in Sources */,
 				1D95AF4A292FE9EA000AEEFC /* RespondersNavigationFacade.swift in Sources */,
+				1D0ACC6D2981D180009464B5 /* VychislyatorBodyMassIndexUserDefaultsFacade.swift in Sources */,
 				1DC6727626ED1E0800CBE954 /* StringFieldItem.Content.swift in Sources */,
+				1D0ACC792981D180009464B5 /* BodyMassIndexCalculator.swift in Sources */,
 				1D1C3F25297B03A00023D3EC /* ReuseIdentifiable.swift in Sources */,
 				1D6CA4AE26E49F320065F307 /* AppDelegate.swift in Sources */,
 				1D778C412973782000573B6F /* MainPresenter.swift in Sources */,
@@ -978,20 +1269,29 @@
 				1DC501E7297AD572003973F1 /* KeyboardNotification.Name.swift in Sources */,
 				1D98263226EE911B006CF3F9 /* Pomogator.swift in Sources */,
 				1DD4CC2C28BA6F5500DB547C /* PlainLabelHeaderItem.swift in Sources */,
+				1D0ACC862981D180009464B5 /* PickerFieldItem.Content.swift in Sources */,
 				1D10C57627009CFB00480DBC /* FieldView.swift in Sources */,
 				1D86B4072972DCEA0065DBDE /* AnyTask.swift in Sources */,
 				1D27C2D32965BA7600F46B0C /* HasApplyChanges.swift in Sources */,
 				1D39EA8C26EE1C3E00EE5F3E /* Font.swift in Sources */,
+				1D0ACC742981D180009464B5 /* VychislyatorDailyCalorieIntakeFormulasListSection.swift in Sources */,
 				1DD4CC3D28BA7ED300DB547C /* CACornerMask+Extensions.swift in Sources */,
 				1D8F5C6E296CC91A006ECBD0 /* ConvenientHitAreaConfiguration.swift in Sources */,
+				1D0ACC882981D180009464B5 /* VychislyatorBodyMassIndexVC.swift in Sources */,
+				1D0ACC8A2981D180009464B5 /* VychislyatorFormulasListSection.swift in Sources */,
 				1D39EA8626EDF1A300EE5F3E /* StringFieldItemDelegate.swift in Sources */,
+				1D0ACC692981D180009464B5 /* MifflinStJeorCalculator.swift in Sources */,
 				1DDD3BBF29807A2900A245D4 /* Bundle+Extensions.swift in Sources */,
 				1D6335D426FF254C00F9F4F8 /* PoedatorSavedMealTimeScheduleAssembly.swift in Sources */,
 				1D5ED0A02975D21C008823FA /* TableViewCellAccessoryInfo.swift in Sources */,
+				1D0ACC872981D180009464B5 /* VychislyatorFormulasListVC.swift in Sources */,
+				1D0ACC852981D180009464B5 /* VychislyatorFormulasListAssembly.swift in Sources */,
 				1D0AD68C297F4532004D8820 /* IAppTabBarCoordinatorAssembly.swift in Sources */,
 				1D500A5528C68E1D00E5E011 /* ITableViewItem.swift in Sources */,
 				1DD4CC2728B2A91100DB547C /* NotificationCenter+Extensions.swift in Sources */,
+				1D0ACC752981D180009464B5 /* PhysicalActivity.swift in Sources */,
 				1D6CA4B026E49F320065F307 /* SceneDelegate.swift in Sources */,
+				1D0ACC6F2981D180009464B5 /* PickerFieldItemContainer.swift in Sources */,
 				1DD4CC0A28B16EA100DB547C /* CGSize+Extensions.swift in Sources */,
 				1D8F5C68296B5897006ECBD0 /* AppTabBarControllerTransitionAnimationController.swift in Sources */,
 			);
@@ -1166,7 +1466,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Pomogator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 38F6TT6Z2T;
 				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -1175,7 +1475,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.anvipo.pomogator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1195,7 +1495,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Pomogator.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 38F6TT6Z2T;
 				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
@@ -1204,7 +1504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.anvipo.pomogator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

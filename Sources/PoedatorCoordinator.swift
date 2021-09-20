@@ -97,6 +97,14 @@ extension PoedatorCoordinator {
 
 		delegate?.didHideCalculateMealTimeScheduleScreen()
 	}
+
+	func goToRootScreen(animated: Bool) {
+		if let navigationController = transitionHandler as? UINavigationController {
+			navigationController.popToRootViewController(animated: animated)
+		} else if let splitViewController = transitionHandler as? UISplitViewController {
+			splitViewController.hideDetailVC()
+		}
+	}
 }
 
 extension PoedatorCoordinator: IRestorable {

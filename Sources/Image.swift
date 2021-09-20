@@ -12,6 +12,8 @@ enum Image {
 	case chevronRight
 	case chevronUp
 
+	case figureCooldown
+	case figureDressLineVerticalFigure
 	case firstMealTime
 
 	case lastMealTime
@@ -21,10 +23,19 @@ enum Image {
 	case numberOfMealTimes
 
 	case pencil
+	case personTextRectangle
 	case plus
 	case poedator
 
+	case questionmarkCircle
+
+	case rulerFigure
+
+	case scaleMass
+
 	case trash
+
+	case vychislyator
 }
 
 extension Image {
@@ -39,6 +50,12 @@ extension Image {
 
 		case .chevronUp:
 			image = UIImage(systemName: "chevron.up")
+
+		case .figureCooldown:
+			image = UIImage(systemName: "figure.cooldown")
+
+		case .figureDressLineVerticalFigure:
+			image = UIImage(named: "FigureDressLineVerticalFigure")
 
 		case .firstMealTime:
 			image = UIImage(named: "FirstMealTime")
@@ -55,14 +72,29 @@ extension Image {
 		case .pencil:
 			image = UIImage(systemName: "pencil")
 
+		case .personTextRectangle:
+			image = UIImage(systemName: "person.text.rectangle")
+
 		case .plus:
 			image = UIImage(systemName: "plus")
 
 		case .poedator:
 			image = UIImage(named: "Poedator")
 
+		case .questionmarkCircle:
+			image = UIImage(systemName: "questionmark.circle")
+
+		case .rulerFigure:
+			image = UIImage(named: "RulerFigure")
+
+		case .scaleMass:
+			image = UIImage(named: "ScaleMass")
+
 		case .trash:
 			image = UIImage(systemName: "trash")
+
+		case .vychislyator:
+			image = UIImage(named: "Vychislyator")
 		}
 
 		if image == nil {

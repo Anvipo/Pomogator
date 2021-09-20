@@ -15,6 +15,8 @@
 "Error" = "Error";
 
 "Main" = "Main";
+"No saved daily calorie intake value" = "No\U00A0saved daily calorie intake value";
+"No saved body mass index value" = "No\U00A0saved body mass index value";
 
 "No upcoming meal time schedule text" = "No\U00A0upcoming meal time for\U00A0today";
 "No saved meal time schedule text" = "No\U00A0saved meal time schedule for\U00A0today";
@@ -56,3 +58,55 @@
 "Poedator afternoon snack notification body" = "It's\U00A0time for\U00A0afternoon snack";
 "Poedator dinner notification body" = "It's\U00A0time for\U00A0dinner";
 "Poedator notification №%@ body" = "It's\U00A0time for\U00A0meal №%@";
+
+"Vychislyator" = "Vychislyator";
+
+"Vychislyator spotlight content description" = "It will help to calculate the values of normal indicators!";
+"Daily calorie intake spotlight content description" = "It will help to calculate the calorie values for your body parameters!";
+"Body mass index spotlight content description" = "It will help to calculate the value of your body mass index!";
+"Calories spotlight keyword" = "Calories";
+"Formula spotlight keyword" = "Formula";
+"Calculator spotlight keyword" = "Calculator";
+"Daily calorie intake spotlight keyword" = "Daily calorie intake";
+"Body mass index spotlight keyword" = "Body mass index";
+"BMI spotlight keyword" = "BMI";
+
+"Formula list" = "Formula list";
+
+"Daily calorie intake" = "Daily calorie intake";
+"Daily calorie intake hint" = "Daily calorie intake helps us to understand how much energy we need to consume per day for various purposes (loss, save or gain mass)";
+"Sex" = "Sex";
+"Male" = "Male";
+"Female" = "Female";
+"Age (in years)" = "Age (in\U00A0years)";
+"Height (in cm)" = "Height (in\U00A0cm)";
+"Mass (in kg)" = "Mass (in\U00A0kg)";
+"Physical activity" = "Physical activity";
+"Minimal" = "Minimal";
+"Low" = "Low";
+"Medium" = "Medium";
+"High" = "High";
+"Extreme" = "Extreme";
+"Mifflin-St. Jeor's section header" = "According to\U00A0the\U00A0Mifflin\U2011St.\U00A0Jeor's formula";
+"To save current mass" = "To\U00A0save current mass";
+"Mifflin-St. Jeor's section footer" = "The value is\U00A0approximate, consultation with\U00A0a\U00A0nutritionist is\U00A0necessary";
+"Based on the Mifflin-St. Jeor's section header" = "Based on\U00A0the\U00A0Mifflin\U2011St.\U00A0Jeor's formula";
+"To gain mass" = "To\U00A0gain mass";
+"To lose mass in a safe way" = "To\U00A0lose mass in\U00A0a\U00A0safe way";
+"To lose mass in a fast way" = "To\U00A0lose mass in\U00A0a\U00A0fast way";
+"Based on the Mifflin-St. Jeor's section footer" = "Values are approximate, consultation\U00A0with\U00A0a\U00A0nutritionist is\U00A0necessary";
+"Save daily calorie intake value" = "Save daily calorie intake value";
+
+"Body mass index" = "Body mass index";
+"Body mass index hint" = "BMI is a value that allows you to determine how much a person’s mass corresponds to his height; whether there is an excess of body mass, or, conversely, it is insufficient";
+"Result section header" = "Result";
+"Severe deficiency of body mass" = "Severe deficiency of\U00A0body mass";
+"Deficiency of body mass" = "Deficiency of\U00A0body mass";
+"Normal body mass" = "Normal body mass";
+"Excess body mass" = "Excess body mass";
+"First degree obesity" = "1st degree obesity";
+"Second degree obesity" = "2nd degree obesity";
+"Third degree obesity" = "Third degree obesity";
+
+"BMI: %@" = "BMI: %@";
+"Save body mass index value" = "Save body mass index value";

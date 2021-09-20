@@ -39,6 +39,24 @@ extension NSDirectionalEdgeInsets {
 	}
 }
 
+extension NSDirectionalEdgeInsets {
+	var horizontal: CGFloat {
+		leading + trailing
+	}
+
+	init(
+		horizontalInset: CGFloat,
+		verticalInset: CGFloat = 0
+	) {
+		self.init(
+			top: verticalInset,
+			leading: horizontalInset,
+			bottom: verticalInset,
+			trailing: horizontalInset
+		)
+	}
+}
+
 extension NSDirectionalEdgeInsets: Hashable {
 	public func hash(into hasher: inout Hasher) {
 		hasher.combine(leading, top, trailing, bottom)
