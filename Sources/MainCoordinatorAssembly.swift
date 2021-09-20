@@ -35,12 +35,16 @@ extension MainCoordinatorAssembly {
 	}
 
 	func main(coordinator: MainCoordinator) -> BaseVC {
+		let userDefaultsFacade = dependenciesStorage.userDefaultsFacade
+
 		let presenter = MainPresenter(
 			assembly: MainAssembly(),
 			calendar: dependenciesStorage.calendar,
 			coordinator: coordinator,
 			notificationFeedbackGenerator: UINotificationFeedbackGenerator(),
-			poedatorUserDefaultsFacade: PoedatorUserDefaultsFacade(userDefaultsFacade: dependenciesStorage.userDefaultsFacade)
+			poedatorUserDefaultsFacade: PoedatorUserDefaultsFacade(userDefaultsFacade: userDefaultsFacade),
+			vychislyatorBodyMassIndexUserDefaultsFacade: .init(userDefaultsFacade: userDefaultsFacade),
+			vychislyatorDailyCalorieIntakeUserDefaultsFacade: .init(userDefaultsFacade: userDefaultsFacade)
 		)
 
 		let view = MainVC(

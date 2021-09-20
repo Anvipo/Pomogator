@@ -22,6 +22,18 @@ extension Pomogator {
 		)
 	}
 
+	static func footerItem<ID: IDType>(
+		id: ID,
+		text: String,
+		textColor: UIColor? = nil
+	) -> PlainLabelFooterItem<ID> {
+		PlainLabelFooterItem(
+			id: id,
+			text: text,
+			textColor: textColor
+		)
+	}
+
 	static func labelItem<ID: IDType>(
 		id: ID,
 		text: String,
@@ -49,6 +61,52 @@ extension Pomogator {
 				}
 			},
 			tintColor: tintColor ?? Self.defaultTintColor.uiColor
+		)
+	}
+
+	static func textItem<ID: IDType>(
+		id: ID,
+		text: String,
+		secondaryText: String,
+		accessoryInfo: TableViewCellAccessoryInfo? = nil,
+		backgroundColorHandler: ((UICellConfigurationState) -> UIColor)? = nil,
+		textAlignment: UIListContentConfiguration.TextProperties.TextAlignment? = nil,
+		textColor: UIColor? = nil,
+		textFont: UIFont? = nil,
+		secondaryTextAlignment: UIListContentConfiguration.TextProperties.TextAlignment? = nil,
+		secondaryTextColor: UIColor? = nil,
+		secondaryTextFont: UIFont? = nil,
+		tintColor: UIColor? = nil
+	) -> PlainTextItem<ID> {
+		PlainTextItem(
+			accessoryInfo: accessoryInfo,
+			backgroundColorHandler: backgroundColorHandler,
+			id: id,
+			text: text,
+			textProperties: PlainTextItem<ID>.makeTextProperties().apply { textProperties in
+				if let textAlignment {
+					textProperties.alignment = textAlignment
+				}
+				if let textColor {
+					textProperties.color = textColor
+				}
+				if let textFont {
+					textProperties.font = textFont
+				}
+			},
+			secondaryText: secondaryText,
+			secondaryTextProperties: PlainTextItem<ID>.makeSecondaryTextProperties().apply { textProperties in
+				if let secondaryTextAlignment {
+					textProperties.alignment = secondaryTextAlignment
+				}
+				if let secondaryTextColor {
+					textProperties.color = secondaryTextColor
+				}
+				if let secondaryTextFont {
+					textProperties.font = secondaryTextFont
+				}
+			},
+			tintColor: tintColor
 		)
 	}
 
@@ -139,6 +197,38 @@ extension Pomogator {
 		: Color.brand.uiColor
 
 		button.configuration = updatedConfiguration
+	}
+
+	static func personSexPickerFieldItem<ID: IDType>(
+		id: ID,
+		content: PickerFieldItem<ID>.Content<PersonSex>,
+		selectedComponent: PickerFieldItem<ID>.SelectedComponentInfo,
+		delegate: PickerFieldItemDelegate
+	) -> PersonSexPickerFieldItem<ID> {
+		PersonSexPickerFieldItem(
+			content: content,
+			pickerFieldItem: PickerFieldItem(
+				delegate: delegate,
+				fieldItem: fieldItem(id: id, delegate: delegate, textFieldTintColor: .clear),
+				selectedComponent: selectedComponent
+			)
+		)
+	}
+
+	static func physicalActivityPickerFieldItem<ID: IDType>(
+		id: ID,
+		content: PickerFieldItem<ID>.Content<PhysicalActivity>,
+		selectedComponent: PickerFieldItem<ID>.SelectedComponentInfo,
+		delegate: PickerFieldItemDelegate
+	) -> PhysicalActivityPickerFieldItem<ID> {
+		PhysicalActivityPickerFieldItem(
+			content: content,
+			pickerFieldItem: PickerFieldItem(
+				delegate: delegate,
+				fieldItem: fieldItem(id: id, delegate: delegate, textFieldTintColor: .clear),
+				selectedComponent: selectedComponent
+			)
+		)
 	}
 }
 

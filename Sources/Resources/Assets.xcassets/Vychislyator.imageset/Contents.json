@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Vychislyator.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

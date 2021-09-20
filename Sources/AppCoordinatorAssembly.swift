@@ -34,6 +34,7 @@ extension AppCoordinatorAssembly {
 			mainCoordinatorAssembly: MainCoordinatorAssembly(),
 			poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly(),
 			spotlightManager: dependenciesStorage.spotlightManager,
+			vychislyatorAssembly: VychislyatorCoordinatorAssembly(),
 			window: window,
 			windowScene: windowScene
 		)

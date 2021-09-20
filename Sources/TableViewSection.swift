@@ -10,6 +10,7 @@ import Foundation
 @MainActor
 struct TableViewSection<SectionID: IDType, ItemID: IDType> {
 	var headerItem: (any ReusableTableViewHeaderFooterItem)?
+	var footerItem: (any ReusableTableViewHeaderFooterItem)?
 	let id: SectionID
 	var items: [AnyTableViewItem<ItemID>] {
 		didSet {
@@ -22,7 +23,8 @@ struct TableViewSection<SectionID: IDType, ItemID: IDType> {
 	init(
 		id: SectionID,
 		items: [AnyTableViewItem<ItemID>],
-		headerItem: (any ReusableTableViewHeaderFooterItem)? = nil
+		headerItem: (any ReusableTableViewHeaderFooterItem)? = nil,
+		footerItem: (any ReusableTableViewHeaderFooterItem)? = nil
 	) throws {
 		if items.isEmpty {
 			let error = InitError.emptyItems
@@ -31,6 +33,7 @@ struct TableViewSection<SectionID: IDType, ItemID: IDType> {
 		}
 
 		self.headerItem = headerItem
+		self.footerItem = footerItem
 		self.id = id
 		self.items = items
 	}
@@ -38,12 +41,14 @@ struct TableViewSection<SectionID: IDType, ItemID: IDType> {
 	init(
 		id: SectionID,
 		items: [any ReusableTableViewItem],
-		headerItem: (any ReusableTableViewHeaderFooterItem)? = nil
+		headerItem: (any ReusableTableViewHeaderFooterItem)? = nil,
+		footerItem: (any ReusableTableViewHeaderFooterItem)? = nil
 	) throws {
 		try self.init(
 			id: id,
 			items: items.map { AnyTableViewItem($0) },
-			headerItem: headerItem
+			headerItem: headerItem,
+			footerItem: footerItem
 		)
 	}
 }
