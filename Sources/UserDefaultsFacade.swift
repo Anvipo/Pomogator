@@ -85,3 +85,132 @@ extension UserDefaultsFacade {
 		}
 	}
 }
+
+// MARK: - Vychislyator's daily calorie intake
+
+private extension String {
+	static var inputedDailyCalorieIntakeSelectedPersonSexIndexKey: Self {
+		"inputedDailyCalorieIntakeSelectedPersonSexIndex"
+	}
+
+	static var inputedDailyCalorieIntakeAgeInYearsKey: Self {
+		"inputedDailyCalorieIntakeAgeInYears"
+	}
+
+	static var inputedDailyCalorieIntakeHeightInCmKey: Self {
+		"inputedDailyCalorieIntakeHeightInCm"
+	}
+
+	static var inputedDailyCalorieIntakeMassInKgKey: Self {
+		"inputedDailyCalorieIntakeMassInKg"
+	}
+
+	static var inputedDailyCalorieIntakeSelectedPhysicalActivityIndexKey: Self {
+		"inputedDailyCalorieIntakeSelectedPhysicalActivityIndex"
+	}
+
+	static var calculatedMifflinStJeorKcNormalValueKey: Self {
+		"calculatedMifflinStJeorKcNormalValue"
+	}
+}
+
+extension UserDefaultsFacade {
+	var inputedDailyCalorieIntakeSelectedPersonSexIndex: UInt? {
+		get {
+			userDefaults.uint(forKey: .inputedDailyCalorieIntakeSelectedPersonSexIndexKey)
+		}
+		set {
+			userDefaults.set(newValue, forKey: .inputedDailyCalorieIntakeSelectedPersonSexIndexKey)
+		}
+	}
+
+	var inputedDailyCalorieIntakeAgeInYears: UInt? {
+		get {
+			userDefaults.uint(forKey: .inputedDailyCalorieIntakeAgeInYearsKey)
+		}
+		set {
+			userDefaults.set(newValue, forKey: .inputedDailyCalorieIntakeAgeInYearsKey)
+		}
+	}
+
+	var inputedDailyCalorieIntakeHeightInCm: Decimal? {
+		get {
+			userDefaults.decimal(forKey: .inputedDailyCalorieIntakeHeightInCmKey)
+		}
+		set {
+			userDefaults.set(newValue?.nsDecimalNumber, forKey: .inputedDailyCalorieIntakeHeightInCmKey)
+		}
+	}
+
+	var inputedDailyCalorieIntakeMassInKg: Decimal? {
+		get {
+			userDefaults.decimal(forKey: .inputedDailyCalorieIntakeMassInKgKey)
+		}
+		set {
+			userDefaults.set(newValue?.nsDecimalNumber, forKey: .inputedDailyCalorieIntakeMassInKgKey)
+		}
+	}
+
+	var inputedDailyCalorieIntakeSelectedPhysicalActivityIndex: UInt? {
+		get {
+			userDefaults.uint(forKey: .inputedDailyCalorieIntakeSelectedPhysicalActivityIndexKey)
+		}
+		set {
+			userDefaults.set(newValue, forKey: .inputedDailyCalorieIntakeSelectedPhysicalActivityIndexKey)
+		}
+	}
+
+	var calculatedMifflinStJeorKcNormalValue: Decimal? {
+		get {
+			userDefaults.decimal(forKey: .calculatedMifflinStJeorKcNormalValueKey)
+		}
+		set {
+			userDefaults.set(newValue?.nsDecimalNumber, forKey: .calculatedMifflinStJeorKcNormalValueKey)
+		}
+	}
+}
+
+// MARK: - Vychislyator's body mass index
+
+private extension String {
+	static var inputedBodyMassIndexMassInKgKey: Self {
+		"inputedBodyMassIndexMassInKg"
+	}
+
+	static var inputedBodyMassIndexHeightInCmKey: Self {
+		"inputedBodyMassIndexHeightInCm"
+	}
+
+	static var calculatedBodyMassIndexKey: Self {
+		"calculatedBodyMassIndex"
+	}
+}
+
+extension UserDefaultsFacade {
+	var inputedBodyMassIndexMassInKg: Decimal? {
+		get {
+			userDefaults.decimal(forKey: .inputedBodyMassIndexMassInKgKey)
+		}
+		set {
+			userDefaults.set(newValue?.nsDecimalNumber, forKey: .inputedBodyMassIndexMassInKgKey)
+		}
+	}
+
+	var inputedBodyMassIndexHeightInCm: Decimal? {
+		get {
+			userDefaults.decimal(forKey: .inputedBodyMassIndexHeightInCmKey)
+		}
+		set {
+			userDefaults.set(newValue?.nsDecimalNumber, forKey: .inputedBodyMassIndexHeightInCmKey)
+		}
+	}
+
+	var calculatedBodyMassIndex: Decimal? {
+		get {
+			userDefaults.decimal(forKey: .calculatedBodyMassIndexKey)
+		}
+		set {
+			userDefaults.set(newValue?.nsDecimalNumber, forKey: .calculatedBodyMassIndexKey)
+		}
+	}
+}

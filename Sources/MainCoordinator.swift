@@ -38,4 +38,14 @@ extension MainCoordinator {
 		appCoordinator.goToPoedator()
 		didChangeScreenFeedbackGenerator.impactOccurred()
 	}
+
+	func goToDailyCalorieIntake() {
+		appCoordinator.goToDailyCalorieIntake()
+		didChangeScreenFeedbackGenerator.impactOccurred()
+	}
+
+	func goToBodyMassIndex() {
+		appCoordinator.goToBodyMassIndex()
+		didChangeScreenFeedbackGenerator.impactOccurred()
+	}
 }

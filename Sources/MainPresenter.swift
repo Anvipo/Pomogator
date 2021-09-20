@@ -16,6 +16,13 @@ final class MainPresenter: BasePresenter {
 
 	private var currentMealTimeList: [Date]
 	private var poedatorSection: MainSection?
+
+	private var currentMifflinStJeorKcNormalValue: Decimal?
+	private var currentPersonSex: PersonSex?
+	private var dailyCalorieIntakeMifflinStJeorKcNormalValueSection: MainSection?
+
+	private var currentBodyMassIndex: Decimal?
+	private var bodyMassIndexSection: MainSection?
 	private weak var view: MainVC?
 
 	init(
@@ -52,6 +59,12 @@ extension MainPresenter {
 		case 0:
 			return poedatorSection
 
+		case 1:
+			return dailyCalorieIntakeMifflinStJeorKcNormalValueSection
+
+		case 2:
+			return bodyMassIndexSection
+
 		default:
 			assertionFailure("?")
 			return nil
@@ -77,6 +90,14 @@ extension MainPresenter {
 		return section.headerItem
 	}
 
+	func footerItemModel(at sectionIndex: Int) -> (any ReusableTableViewHeaderFooterItem)? {
+		guard let section = sectionModel(at: sectionIndex) else {
+			return nil
+		}
+
+		return section.footerItem
+	}
+
 	func didTapItem(with itemIdentifier: MainItemIdentifier, at indexPath: IndexPath) {
 		guard itemModel(by: itemIdentifier, at: indexPath) != nil else {
 			assertionFailure("?")
@@ -88,6 +109,12 @@ extension MainPresenter {
 		switch itemIdentifier {
 		case .poedator:
 			coordinator.goToPoedator()
+
+		case .dailyCalorieIntakeMifflinStJeorKcNormalValue:
+			coordinator.goToDailyCalorieIntake()
+
+		case .bodyMassIndex:
+			coordinator.goToBodyMassIndex()
 		}
 	}
 }
@@ -103,8 +130,16 @@ private extension MainPresenter {
 		let poedatorSection = makePoedatorSection()
 		self.poedatorSection = poedatorSection
 
+		let dailyCalorieIntakeMifflinStJeorKcNormalValueSection = makeDailyCalorieIntakeMifflinStJeorKcNormalValueSection()
+		self.dailyCalorieIntakeMifflinStJeorKcNormalValueSection = dailyCalorieIntakeMifflinStJeorKcNormalValueSection
+
+		let bodyMassIndexSection = makeBodyMassIndexSection()
+		self.bodyMassIndexSection = bodyMassIndexSection
+
 		let snapshotData = [
-			poedatorSection.snapshotData
+			poedatorSection.snapshotData,
+			dailyCalorieIntakeMifflinStJeorKcNormalValueSection.snapshotData,
+			bodyMassIndexSection.snapshotData
 		]
 
 		view?.set(snapshotData: snapshotData)
@@ -132,5 +167,55 @@ private extension MainPresenter {
 			for: calculatedMealTimeList,
 			isMealTimeListInSameDay: isMealTimeListInSameDay
 		)
+	}
+
+	func makeDailyCalorieIntakeMifflinStJeorKcNormalValueSection() -> MainSection {
+		let calculatedMifflinStJeorKcNormalValue = userDefaultsFacade.calculatedMifflinStJeorKcNormalValue
+		let selectedPersonSex: PersonSex?
+		if let inputedDailyCalorieIntakeSelectedPersonSexIndex = userDefaultsFacade
+			.inputedDailyCalorieIntakeSelectedPersonSexIndex
+			.flatMap(Int.init(_:)) {
+			selectedPersonSex = PersonSex.allCases[inputedDailyCalorieIntakeSelectedPersonSexIndex]
+		} else {
+			selectedPersonSex = nil
+		}
+
+		if calculatedMifflinStJeorKcNormalValue == nil && selectedPersonSex == nil {
+			return assembly.mifflinStJeorKcNormalValueSection(
+				calculatedMifflinStJeorKcNormalValue: nil,
+				selectedPersonSex: nil
+			)
+		}
+
+		if selectedPersonSex == currentPersonSex &&
+		   calculatedMifflinStJeorKcNormalValue == currentMifflinStJeorKcNormalValue {
+			// swiftlint:disable:next force_unwrapping
+			return dailyCalorieIntakeMifflinStJeorKcNormalValueSection!
+		}
+
+		currentMifflinStJeorKcNormalValue = calculatedMifflinStJeorKcNormalValue
+		currentPersonSex = selectedPersonSex
+
+		return assembly.mifflinStJeorKcNormalValueSection(
+			calculatedMifflinStJeorKcNormalValue: calculatedMifflinStJeorKcNormalValue,
+			selectedPersonSex: selectedPersonSex
+		)
+	}
+
+	func makeBodyMassIndexSection() -> MainSection {
+		let calculatedBodyMassIndex = userDefaultsFacade.calculatedBodyMassIndex
+
+		if calculatedBodyMassIndex == nil {
+			return assembly.bodyMassIndexSection(calculatedBodyMassIndex: nil)
+		}
+
+		if calculatedBodyMassIndex == currentBodyMassIndex {
+			// swiftlint:disable:next force_unwrapping
+			return bodyMassIndexSection!
+		}
+
+		currentBodyMassIndex = calculatedBodyMassIndex
+
+		return assembly.bodyMassIndexSection(calculatedBodyMassIndex: calculatedBodyMassIndex)
 	}
 }

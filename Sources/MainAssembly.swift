@@ -48,7 +48,93 @@ extension MainAssembly {
 	}
 }
 
+extension MainAssembly {
+	func mifflinStJeorKcNormalValueSection(
+		calculatedMifflinStJeorKcNormalValue: Decimal?,
+		selectedPersonSex: PersonSex?
+	) -> MainSection {
+		let mifflinStJeorKcNormalValueItem: any ReusableTableViewItem
+		let footerItem: (any ReusableTableViewHeaderFooterItem)?
+		if let calculatedMifflinStJeorKcNormalValue, let selectedPersonSex {
+			let mifflinStJeorCalculator = MifflinStJeorCalculator()
+			let text = mifflinStJeorCalculator.format(
+				kilocalories: calculatedMifflinStJeorKcNormalValue,
+				selectedPersonSex: selectedPersonSex
+			)
+
+			let assembly = VychislyatorDailyCalorieIntakeFormulasListAssembly()
+			var mifflinStJeorSectionFooterItem = assembly.mifflinStJeorSectionFooterItem
+			mifflinStJeorSectionFooterItem.textColor = Color.label.uiColor
+			footerItem = mifflinStJeorSectionFooterItem
+
+			mifflinStJeorKcNormalValueItem = labelItem(
+				id: MainItemIdentifier.dailyCalorieIntakeMifflinStJeorKcNormalValue(
+					mifflinStJeorKcNormalValue: calculatedMifflinStJeorKcNormalValue
+				),
+				text: text,
+				textAlignment: Pomogator.defaultLabelTextAlignment,
+				textFont: Pomogator.defaultLabelTextFont.uiFont
+			)
+		} else {
+			mifflinStJeorKcNormalValueItem = emptyMifflinStJeorKcNormalValueItem
+			footerItem = nil
+		}
+
+		// swiftlint:disable:next force_try
+		return try! MainSection(
+			id: .dailyCalorieIntakeMifflinStJeorKcNormalValue,
+			items: [mifflinStJeorKcNormalValueItem],
+			headerItem: PlainLabelHeaderItem(
+				id: MainHeaderItemIdentifier.dailyCalorieIntakeMifflinStJeorKcNormalValue,
+				text: String(localized: "Vychislyator")
+			),
+			footerItem: footerItem
+		)
+	}
+
+	func bodyMassIndexSection(
+		calculatedBodyMassIndex: Decimal?
+	) -> MainSection {
+		let bmiItem: any ReusableTableViewItem
+		if let calculatedBodyMassIndex {
+			let assembly = VychislyatorBodyMassIndexAssembly()
+			let bodyMassIndexCalculator = BodyMassIndexCalculator()
+			let bodyMassIndexInfo = bodyMassIndexCalculator.bodyMassIndexInfo(from: calculatedBodyMassIndex)
+
+			let resultSectionItem = assembly.resultSectionItem(bodyMassIndexInfo: bodyMassIndexInfo)
+			bmiItem = labelItem(
+				id: MainItemIdentifier.bodyMassIndex(calculatedBodyMassIndex: calculatedBodyMassIndex),
+				text: String(localized: "BMI: \(resultSectionItem.content.text)"),
+				textAlignment: Pomogator.defaultLabelTextAlignment,
+				textFont: Pomogator.defaultLabelTextFont.uiFont
+			)
+		} else {
+			bmiItem = emptyBMIItem
+		}
+
+		// swiftlint:disable:next force_try
+		return try! MainSection(
+			id: .bodyMassIndex,
+			items: [bmiItem]
+		)
+	}
+}
+
 private extension MainAssembly {
+	var emptyMifflinStJeorKcNormalValueItem: any ReusableTableViewItem {
+		emptySectionLabelItem(
+			id: MainItemIdentifier.dailyCalorieIntakeMifflinStJeorKcNormalValue(mifflinStJeorKcNormalValue: nil),
+			text: String(localized: "No calculated daily calorie intake value")
+		)
+	}
+
+	var emptyBMIItem: any ReusableTableViewItem {
+		emptySectionLabelItem(
+			id: MainItemIdentifier.bodyMassIndex(calculatedBodyMassIndex: nil),
+			text: String(localized: "No calculated body mass index value")
+		)
+	}
+
 	func emptySectionLabelItem<ID: IDType>(
 		id: ID,
 		text: String

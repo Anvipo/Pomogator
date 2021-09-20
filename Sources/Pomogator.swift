@@ -32,6 +32,18 @@ extension Pomogator {
 		)
 	}
 
+	static func footerItem<ID: IDType>(
+		id: ID,
+		text: String,
+		textColor: UIColor? = nil
+	) -> PlainLabelFooterItem<ID> {
+		PlainLabelFooterItem(
+			id: id,
+			text: text,
+			textColor: textColor
+		)
+	}
+
 	static func labelItem<ID: IDType>(
 		id: ID,
 		text: String,
@@ -51,6 +63,22 @@ extension Pomogator {
 			textColor: textColor ?? Self.defaultTextColor.uiColor,
 			textFont: textFont ?? Self.defaultLabelTextFont.uiFont,
 			tintColor: tintColor
+		)
+	}
+
+	static func textItem<ID: IDType>(
+		id: ID,
+		title: String,
+		text: String,
+		textColor: UIColor? = nil
+	) -> PlainTextItem<ID> {
+		PlainTextItem(
+			content: .init(
+				title: title,
+				text: text
+			),
+			id: id,
+			textColor: textColor
 		)
 	}
 
@@ -142,6 +170,38 @@ extension Pomogator {
 		: Color.brand.uiColor
 
 		button.configuration = updatedConfiguration
+	}
+
+	static func personSexPickerFieldItem<ID: IDType>(
+		id: ID,
+		content: PickerFieldItem<ID>.Content<PersonSex>,
+		selectedComponent: PickerFieldItem<ID>.SelectedComponentInfo,
+		delegate: PickerFieldItemDelegate
+	) -> PersonSexPickerFieldItem<ID> {
+		PersonSexPickerFieldItem(
+			content: content,
+			pickerFieldItem: PickerFieldItem(
+				delegate: delegate,
+				fieldItem: fieldItem(id: id, delegate: delegate, textFieldTintColor: .clear),
+				selectedComponent: selectedComponent
+			)
+		)
+	}
+
+	static func physicalActivityPickerFieldItem<ID: IDType>(
+		id: ID,
+		content: PickerFieldItem<ID>.Content<PhysicalActivity>,
+		selectedComponent: PickerFieldItem<ID>.SelectedComponentInfo,
+		delegate: PickerFieldItemDelegate
+	) -> PhysicalActivityPickerFieldItem<ID> {
+		PhysicalActivityPickerFieldItem(
+			content: content,
+			pickerFieldItem: PickerFieldItem(
+				delegate: delegate,
+				fieldItem: fieldItem(id: id, delegate: delegate, textFieldTintColor: .clear),
+				selectedComponent: selectedComponent
+			)
+		)
 	}
 }
 

@@ -60,6 +60,14 @@ extension MainVC: UITableViewDelegate {
 		return tableView.dequeueAndConfigureHeaderFooterView(item: headerItemModel)
 	}
 
+	func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+		guard let footerItemModel = presenter.footerItemModel(at: section) else {
+			return nil
+		}
+
+		return tableView.dequeueAndConfigureHeaderFooterView(item: footerItemModel)
+	}
+
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		tableView.deselectRow(at: indexPath, animated: shouldAnimateTableViewDifferences)
 

@@ -16,12 +16,17 @@ extension Int {
 	static var poedatorTabIndex: Self {
 		1
 	}
+
+	static var vychislyatorTabIndex: Self {
+		2
+	}
 }
 
 final class AppCoordinator: BaseCoordinator {
 	private let assembly: AppCoordinatorAssembly
 	private let mainCoordinatorAssembly: MainCoordinatorAssembly
 	private let poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly
+	private let vychislyatorAssembly: VychislyatorCoordinatorAssembly
 
 	private weak var application: UIApplication?
 	private weak var appTabBarController: UITabBarController?
@@ -31,6 +36,7 @@ final class AppCoordinator: BaseCoordinator {
 
 	private var mainCoordinator: MainCoordinator?
 	private var poedatorCoordinator: PoedatorCoordinator?
+	private var vychislyatorCoordinator: VychislyatorCoordinator?
 
 	init(
 		application: UIApplication,
@@ -39,6 +45,7 @@ final class AppCoordinator: BaseCoordinator {
 		didChangeScreenFeedbackGenerator: UIImpactFeedbackGenerator,
 		poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly,
 		mainCoordinatorAssembly: MainCoordinatorAssembly,
+		vychislyatorAssembly: VychislyatorCoordinatorAssembly,
 		window: UIWindow,
 		windowScene: UIWindowScene
 	) {
@@ -47,6 +54,7 @@ final class AppCoordinator: BaseCoordinator {
 		self.device = device
 		self.poedatorCoordinatorAssembly = poedatorCoordinatorAssembly
 		self.mainCoordinatorAssembly = mainCoordinatorAssembly
+		self.vychislyatorAssembly = vychislyatorAssembly
 		self.window = window
 		self.windowScene = windowScene
 
@@ -87,20 +95,64 @@ extension AppCoordinator {
 		)
 		self.poedatorCoordinator = poedatorCoordinator
 
+		let (vychislyatorCoordinator, vychislyatorTransitionHandler) = vychislyatorAssembly.coordinatorAndTransitionHandler(
+			device: device,
+			windowScene: windowScene
+		)
+		self.vychislyatorCoordinator = vychislyatorCoordinator
+
 		let appTabBarController = assembly.appTabBarController
 		self.appTabBarController = appTabBarController
 		appTabBarController.viewControllers = [
 			mainTransitionHandler,
-			poedatorTransitionHandler
+			poedatorTransitionHandler,
+			vychislyatorTransitionHandler
 		]
 
 		window.rootViewController = appTabBarController
 
 		mainCoordinator.startFlow(from: mainTransitionHandler)
 		poedatorCoordinator.startFlow(from: poedatorTransitionHandler)
+		vychislyatorCoordinator.startFlow(from: vychislyatorTransitionHandler)
 	}
 
 	func goToPoedator() {
-		appTabBarController?.selectedIndex = .poedatorTabIndex
+		guard let appTabBarController,
+			  let poedatorCoordinator
+		else {
+			assertionFailure("?")
+			return
+		}
+
+		appTabBarController.selectedIndex = .poedatorTabIndex
+		poedatorCoordinator.goToRootScreen(animated: false)
+	}
+
+	func goToDailyCalorieIntake() {
+		guard let appTabBarController,
+			  let vychislyatorCoordinator
+		else {
+			assertionFailure("?")
+			return
+		}
+
+		appTabBarController.selectedIndex = .vychislyatorTabIndex
+
+		vychislyatorCoordinator.goToRootScreen(animated: false)
+		vychislyatorCoordinator.showDailyCalorieIntakeFormulasScreen(animated: false)
+	}
+
+	func goToBodyMassIndex() {
+		guard let appTabBarController,
+			  let vychislyatorCoordinator
+		else {
+			assertionFailure("?")
+			return
+		}
+
+		appTabBarController.selectedIndex = .vychislyatorTabIndex
+
+		vychislyatorCoordinator.goToRootScreen(animated: false)
+		vychislyatorCoordinator.showBodyMassIndexScreen(animated: false)
 	}
 }

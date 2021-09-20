@@ -97,6 +97,23 @@ extension UIView {
 	}
 }
 
+// MARK: - Actual content extensions
+
+extension UIView {
+	func actualContentHeight(availableWidth: CGFloat) -> CGFloat {
+		let targetSize = CGSize(
+			width: availableWidth,
+			height: Self.layoutFittingCompressedSize.height
+		)
+		let result = systemLayoutSizeFitting(
+			targetSize,
+			withHorizontalFittingPriority: .required,
+			verticalFittingPriority: .fittingSizeLevel
+		)
+		return result.height
+	}
+}
+
 // MARK: - Animations extension
 
 extension UIView {

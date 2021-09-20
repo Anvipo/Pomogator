@@ -32,6 +32,7 @@ extension AppCoordinatorAssembly {
 			didChangeScreenFeedbackGenerator: dependenciesStorage.didChangeScreenFeedbackGenerator,
 			poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly(),
 			mainCoordinatorAssembly: MainCoordinatorAssembly(),
+			vychislyatorAssembly: VychislyatorCoordinatorAssembly(),
 			window: window,
 			windowScene: windowScene
 		)

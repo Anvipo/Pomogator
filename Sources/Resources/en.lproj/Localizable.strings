@@ -15,6 +15,8 @@
 "Error" = "Error";
 
 "Main" = "Main";
+"No calculated daily calorie intake value" = "No calculated daily calorie intake value";
+"No calculated body mass index value" = "No calculated body mass index value";
 
 "Poedator" = "Poedator";
 
@@ -41,3 +43,44 @@
 "It's time for afternoon snack" = "It's time for\U00A0afternoon snack";
 "It's time for dinner" = "It's time for\U00A0dinner";
 "It's time for %@" = "It's time for\U00A0meal №%@";
+
+"Vychislyator" = "Vychislyator";
+
+"Formula list" = "Formula list";
+
+"Daily calorie intake" = "Daily calorie intake";
+"Daily calorie intake hint" = "Daily calorie intake helps us to understand how much energy we need to consume per day for various purposes (loss, save or gain mass)";
+"Sex" = "Sex";
+"Male" = "Male";
+"Female" = "Female";
+"Age (in years)" = "Age (in\U00A0years)";
+"Height (in cm)" = "Height (in\U00A0cm)";
+"Mass (in kg)" = "Mass (in\U00A0kg)";
+"Physical activity" = "Physical activity";
+"Minimal" = "Minimal";
+"Low" = "Low";
+"Medium" = "Medium";
+"High" = "High";
+"Extreme" = "Extreme";
+"Mifflin-St. Jeor's section header" = "According to\U00A0the\U00A0Mifflin\U2011St.\U00A0Jeor's formula";
+"To save current mass" = "To\U00A0save current mass";
+"Mifflin-St. Jeor's section footer" = "The value is\U00A0approximate, consultation with\U00A0a\U00A0nutritionist is\U00A0necessary";
+"Based on the Mifflin-St. Jeor's section header" = "Based on\U00A0the\U00A0Mifflin\U2011St.\U00A0Jeor's formula";
+"To gain mass" = "To\U00A0gain mass";
+"To lose mass in a safe way" = "To\U00A0lose mass in\U00A0a\U00A0safe way";
+"To lose mass in a fast way" = "To\U00A0lose mass in\U00A0a\U00A0fast way";
+"Based on the Mifflin-St. Jeor's section footer" = "Values are approximate, consultation\U00A0with\U00A0a\U00A0nutritionist is\U00A0necessary";
+
+"Body mass index" = "Body mass index";
+"Body mass index hint" = "BMI is a value that allows you to determine how much a person’s mass corresponds to his height; whether there is an excess of body mass, or, conversely, it is insufficient";
+"Result section header" = "Result";
+"Severe deficiency of body mass" = "Severe deficiency of\U00A0body mass";
+"Deficiency of body mass" = "Deficiency of\U00A0body mass";
+"Normal body mass" = "Normal body mass";
+"Excess body mass" = "Excess body mass";
+"First degree obesity" = "1st degree obesity";
+"Second degree obesity" = "2nd degree obesity";
+"Third degree obesity" = "Third degree obesity";
+
+"BMI: %@" = "BMI: %@";
+"Save body mass index value" = "Save body mass index value";

@@ -15,6 +15,8 @@
 "Error" = "Ошибка";
 
 "Main" = "Главная";
+"No calculated daily calorie intake value" = "Нет вычисленной суточной нормы калорий";
+"No calculated body mass index value" = "Нет вычисленного индекса массы тела";
 
 "Poedator" = "Поедатор";
 
@@ -41,3 +43,45 @@
 "It's time for afternoon snack" = "Пора принимать полдник";
 "It's time for dinner" = "Пора ужинать";
 "It's time for %@" = "Пора принимать приём пищи №%@";
+
+"Vychislyator" = "Вычислятор";
+
+"Formula list" = "Список формул";
+
+"Daily calorie intake" = "Суточная норма калорий";
+"Daily calorie intake hint" = "Суточная норма калорий помогает понять, сколько энергии нам необходимо потреблять в день для различных целей (похудение, удержание или набор массы)";
+"Sex" = "Пол";
+"Male" = "Мужской";
+"Female" = "Женский";
+"Age (in years)" = "Возраст (в\U00A0годах)";
+"Height (in cm)" = "Рост (в\U00A0см)";
+"Mass (in kg)" = "Масса (в\U00A0кг)";
+"Physical activity" = "Физическая активность";
+"Minimal" = "Минимальная";
+"Low" = "Низкая";
+"Medium" = "Средняя";
+"High" = "Высокая";
+"Extreme" = "Экстремальная";
+"Mifflin-St. Jeor's section header" = "По\U00A0формуле Миффлин\U2011Сан\U00A0Жеора";
+"To save current mass" = "Для\U00A0сохранения текущей массы";
+"Mifflin-St. Jeor's section footer" = "Значение является приблизительным, необходима\U00A0консультация с\U00A0диетологом";
+"Based on the Mifflin-St. Jeor's section header" = "На\U00A0основе формулы Миффлин\U2011Сан\U00A0Жеора";
+"To gain mass" = "Для\U00A0набора массы";
+"To lose mass in a safe way" = "Для похудения в\U00A0безопасном режиме";
+"To lose mass in a fast way" = "Для похудения в\U00A0быстром режиме";
+"Based on the Mifflin-St. Jeor's section footer" = "Значения являются приблизительными, необходима\U00A0консультация с\U00A0диетологом";
+"Save daily calorie intake value" = "Сохранить суточную норму калорий";
+
+"Body mass index" = "Индекс массы тела";
+"Body mass index hint" = "ИМТ - это величина, позволяющая определить, насколько масса человека соответствует его росту; имеются ли излишки массы тела, или, наоборот, она\U00A0недостаточна";
+"Result section header" = "Результат";
+"Severe deficiency of body mass" = "Выраженный дефицит массы тела";
+"Deficiency of body mass" = "Дефицит массы тела";
+"Normal body mass" = "Нормальная масса тела";
+"Excess body mass" = "Избыточная масса тела";
+"First degree obesity" = "Ожирение первой степени";
+"Second degree obesity" = "Ожирение второй степени";
+"Third degree obesity" = "Ожирение третьей степени";
+
+"BMI: %@" = "ИМТ: %@";
+"Save body mass index value" = "Сохранить индекс массы тела";
