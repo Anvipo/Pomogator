@@ -48,7 +48,7 @@ extension SceneDelegate: UISceneDelegate {
 			return
 		}
 
-		let window = UIWindow(windowScene: windowScene)
+		let window = Window(windowScene: windowScene)
 		self.window = window
 
 		appCoordinator = appCoordinatorAssembly.coordinator(

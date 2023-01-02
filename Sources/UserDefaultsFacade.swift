@@ -15,6 +15,28 @@ final class UserDefaultsFacade {
 	}
 }
 
+// MARK: - Onboarding
+
+private extension String {
+	static var userWasOnboardedKey: Self {
+		"userWasOnboarded"
+	}
+}
+
+extension UserDefaultsFacade {
+	var userWasOnboarded: Bool {
+		get {
+			userDefaults.bool(forKey: .userWasOnboardedKey)
+		}
+		set {
+			userDefaults.set(
+				newValue,
+				forKey: .userWasOnboardedKey
+			)
+		}
+	}
+}
+
 // MARK: - Poedator
 
 private extension String {

@@ -26,7 +26,7 @@ extension AppCoordinatorAssembly {
 	func coordinator(
 		application: UIApplication,
 		device: UIDevice,
-		window: UIWindow,
+		window: Window,
 		windowScene: UIWindowScene
 	) -> AppCoordinator {
 		AppCoordinator(
@@ -36,6 +36,7 @@ extension AppCoordinatorAssembly {
 			didChangeScreenFeedbackGenerator: dependenciesStorage.didChangeScreenFeedbackGenerator,
 			poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly(),
 			mainCoordinatorAssembly: MainCoordinatorAssembly(),
+			userDefaultsFacade: DependenciesStorage.shared.userDefaultsFacade,
 			vychislyatorAssembly: VychislyatorCoordinatorAssembly(),
 			window: window,
 			windowScene: windowScene

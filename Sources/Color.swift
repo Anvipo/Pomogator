@@ -10,6 +10,9 @@ import UIKit
 enum Color {
 	case brand
 
+	case black
+	case white
+
 	case tertiarySystemBackground
 
 	case label
@@ -23,6 +26,12 @@ extension Color {
 		switch self {
 		case .brand:
 			return UIColor(red: 0, green: 0.584, blue: 0.251, alpha: 1)
+
+		case .black:
+			return .black
+
+		case .white:
+			return .white
 
 		case .tertiarySystemBackground:
 			return .tertiarySystemBackground

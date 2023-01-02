@@ -26,12 +26,13 @@ final class AppCoordinator: BaseCoordinator {
 	private let assembly: AppCoordinatorAssembly
 	private let mainCoordinatorAssembly: MainCoordinatorAssembly
 	private let poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly
+	private let userDefaultsFacade: UserDefaultsFacade
 	private let vychislyatorAssembly: VychislyatorCoordinatorAssembly
 
 	private weak var application: UIApplication?
 	private weak var appTabBarController: UITabBarController?
 	private weak var device: UIDevice?
-	private weak var window: UIWindow?
+	private weak var window: Window?
 	private weak var windowScene: UIWindowScene?
 
 	private var mainCoordinator: MainCoordinator?
@@ -45,8 +46,9 @@ final class AppCoordinator: BaseCoordinator {
 		didChangeScreenFeedbackGenerator: UIImpactFeedbackGenerator,
 		poedatorCoordinatorAssembly: PoedatorCoordinatorAssembly,
 		mainCoordinatorAssembly: MainCoordinatorAssembly,
+		userDefaultsFacade: UserDefaultsFacade,
 		vychislyatorAssembly: VychislyatorCoordinatorAssembly,
-		window: UIWindow,
+		window: Window,
 		windowScene: UIWindowScene
 	) {
 		self.application = application
@@ -54,6 +56,7 @@ final class AppCoordinator: BaseCoordinator {
 		self.device = device
 		self.poedatorCoordinatorAssembly = poedatorCoordinatorAssembly
 		self.mainCoordinatorAssembly = mainCoordinatorAssembly
+		self.userDefaultsFacade = userDefaultsFacade
 		self.vychislyatorAssembly = vychislyatorAssembly
 		self.window = window
 		self.windowScene = windowScene
@@ -70,10 +73,36 @@ extension AppCoordinator {
 		}
 
 		window.rootViewController = assembly.splashScreenVC { [weak self] in
-			self?.showAppTabBar()
+			self?.showAfterSplashScreen()
 		}
 		window.makeKeyAndVisible()
 		window.addFadeTransition()
+	}
+
+	func showAfterSplashScreen() {
+		guard let window,
+			  let windowScene
+		else {
+			assertionFailure("?")
+			return
+		}
+
+		if userDefaultsFacade.userWasOnboarded {
+			showAppTabBar()
+		} else {
+			window.rootViewController = OnboardingRootVC(
+				screen: windowScene.screen,
+				buttonSelectionFeedbackGenerator: UISelectionFeedbackGenerator(),
+				pageControlSelectionFeedbackGenerator: UISelectionFeedbackGenerator()
+			) { [weak self] in
+				self?.userDefaultsFacade.userWasOnboarded = true
+
+				self?.didChangeScreenFeedbackGenerator.prepare()
+				self?.showAppTabBar {
+					self?.didChangeScreenFeedbackGenerator.impactOccurred()
+				}
+			}
+		}
 	}
 
 	func showAppTabBar(completion: (() -> Void)? = nil) {
@@ -121,6 +150,37 @@ extension AppCoordinator {
 		mainCoordinator.startFlow(from: mainTransitionHandler)
 		poedatorCoordinator.startFlow(from: poedatorTransitionHandler)
 		vychislyatorCoordinator.startFlow(from: vychislyatorTransitionHandler)
+
+		window.responderDelegate = self
+	}
+}
+
+extension AppCoordinator: UIResponderDelegate {
+	func shakeBegan() {
+		didChangeScreenFeedbackGenerator.prepare()
+	}
+
+	func shakeEnded() {
+		guard let rootViewController = window?.rootViewController else {
+			assertionFailure("?")
+			return
+		}
+
+		let pomogatorFaceVC = PomogatorFaceVC()
+		pomogatorFaceVC.navigationItem.rightBarButtonItem = UIBarButtonItem(
+			image: Image.xmarkCircleFill.uiImage,
+			primaryAction: UIAction { [weak self] _ in
+				self?.window?.rootViewController?.presentedViewController?.dismiss(animated: true)
+			}
+		).apply { barButtonItem in
+			barButtonItem.tintColor = Color.white.uiColor
+		}
+
+		let navigationController = PomogatorFaceNC(rootViewController: pomogatorFaceVC)
+
+		rootViewController.present(navigationController, animated: true)
+
+		didChangeScreenFeedbackGenerator.impactOccurred()
 	}
 
 	func goToPoedator() {

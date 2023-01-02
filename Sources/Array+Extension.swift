@@ -17,4 +17,12 @@ extension Array {
 
 		return endIndex - 1
 	}
+
+	var penultimateElementIndex: Index {
+		if isEmpty {
+			return firstElementIndex
+		}
+
+		return lastElementIndex - 1
+	}
 }

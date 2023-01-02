@@ -41,6 +41,8 @@
 		1D39EA8A26EE148000EE5F3E /* DateFieldItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39EA8926EE148000EE5F3E /* DateFieldItemDelegate.swift */; };
 		1D39EA8C26EE1C3E00EE5F3E /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D39EA8B26EE1C3E00EE5F3E /* Font.swift */; };
 		1D3CB32E296F93BB007CF7F4 /* UIViewPropertyAnimator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CB32D296F93BB007CF7F4 /* UIViewPropertyAnimator+Extensions.swift */; };
+		1D3CB3382972D80E007CF7F4 /* PomogatorFaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CB3362972D80E007CF7F4 /* PomogatorFaceVC.swift */; };
+		1D3CB3392972D80E007CF7F4 /* PomogatorFaceNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CB3372972D80E007CF7F4 /* PomogatorFaceNC.swift */; };
 		1D43BB582955F38100E46926 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D43BB572955F38100E46926 /* UIViewController+Extensions.swift */; };
 		1D43BB5A29560C8400E46926 /* UISplitViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D43BB5929560C8400E46926 /* UISplitViewController+Extensions.swift */; };
 		1D4FC64B297B167100469ACB /* ReusableTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4FC64A297B167100469ACB /* ReusableTableViewItem.swift */; };
@@ -92,6 +94,8 @@
 		1DA62E2C297B639A003C451E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA62E28297B639A003C451E /* String+Extensions.swift */; };
 		1DA62E2D297B639A003C451E /* Decimal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA62E29297B639A003C451E /* Decimal+Extensions.swift */; };
 		1DA62E2E297B639A003C451E /* LegacyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA62E2A297B639A003C451E /* LegacyExtensions.swift */; };
+		1DA62E31297B666C003C451E /* Comparable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA62E30297B666C003C451E /* Comparable+Extensions.swift */; };
+		1DA62E33297B6683003C451E /* WeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA62E32297B6683003C451E /* WeakProxy.swift */; };
 		1DB33E2F296CEEF1008D3A36 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33E2E296CEEF1008D3A36 /* UIColor+Extensions.swift */; };
 		1DB33E49296DE981008D3A36 /* UIColor.HSBAComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33E48296DE981008D3A36 /* UIColor.HSBAComponents.swift */; };
 		1DB33E7C296E2AD9008D3A36 /* Hasher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */; };
@@ -137,6 +141,15 @@
 		1DB33F35296F1F63008D3A36 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F34296F1F63008D3A36 /* Animation.swift */; };
 		1DB33F37296F1F73008D3A36 /* LottieAnimationView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */; };
 		1DB33F3A296F1FF0008D3A36 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1DB33F39296F1FF0008D3A36 /* Lottie */; };
+		1DB33F3D296F204C008D3A36 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F3C296F204C008D3A36 /* Window.swift */; };
+		1DB33F48296F2071008D3A36 /* UIResponderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F3F296F2071008D3A36 /* UIResponderDelegate.swift */; };
+		1DB33F49296F2071008D3A36 /* OnboardingLastStepVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F40296F2071008D3A36 /* OnboardingLastStepVC.swift */; };
+		1DB33F4A296F2071008D3A36 /* FluidPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F41296F2071008D3A36 /* FluidPageControl.swift */; };
+		1DB33F4B296F2071008D3A36 /* OnboardingOnlyTextStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F42296F2071008D3A36 /* OnboardingOnlyTextStepView.swift */; };
+		1DB33F4C296F2071008D3A36 /* OnboardingLastStepItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F43296F2071008D3A36 /* OnboardingLastStepItemView.swift */; };
+		1DB33F4D296F2071008D3A36 /* OnboardingRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F44296F2071008D3A36 /* OnboardingRootVC.swift */; };
+		1DB33F4F296F2071008D3A36 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F46296F2071008D3A36 /* Layer.swift */; };
+		1DB33F50296F2071008D3A36 /* BasePageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F47296F2071008D3A36 /* BasePageControl.swift */; };
 		1DC6726F26ED17D100CBE954 /* DateFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6726E26ED17D100CBE954 /* DateFieldItem.swift */; };
 		1DC6727126ED18BF00CBE954 /* DateFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6727026ED18BF00CBE954 /* DateFieldView.swift */; };
 		1DC6727426ED1C7400CBE954 /* DependenciesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6727326ED1C7400CBE954 /* DependenciesStorage.swift */; };
@@ -168,6 +181,7 @@
 		1DD4CC3628BA7A1E00DB547C /* TableViewHeaderFooterItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4CC3528BA7A1E00DB547C /* TableViewHeaderFooterItemProtocol.swift */; };
 		1DD4CC3D28BA7ED300DB547C /* CACornerMask+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD4CC3C28BA7ED300DB547C /* CACornerMask+Extensions.swift */; };
 		1DDD868129761FD300EBB336 /* BodyMassIndexInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD868029761FD200EBB336 /* BodyMassIndexInfo.swift */; };
+		1DDF50D7297B3C0E0049191C /* BasePageControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDF50D6297B3C0E0049191C /* BasePageControlDelegate.swift */; };
 		1DE6DE2328C3BCD300C8B205 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DE6DE2528C3BCD300C8B205 /* InfoPlist.strings */; };
 		1DF99DD528BBC11400085A15 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF99DD428BBC11400085A15 /* ButtonsView.swift */; };
 		1DF99DD728BBC13200085A15 /* ButtonsView.InitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF99DD628BBC13200085A15 /* ButtonsView.InitError.swift */; };
@@ -208,6 +222,8 @@
 		1D39EA8926EE148000EE5F3E /* DateFieldItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldItemDelegate.swift; sourceTree = "<group>"; };
 		1D39EA8B26EE1C3E00EE5F3E /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		1D3CB32D296F93BB007CF7F4 /* UIViewPropertyAnimator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewPropertyAnimator+Extensions.swift"; sourceTree = "<group>"; };
+		1D3CB3362972D80E007CF7F4 /* PomogatorFaceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomogatorFaceVC.swift; sourceTree = "<group>"; };
+		1D3CB3372972D80E007CF7F4 /* PomogatorFaceNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PomogatorFaceNC.swift; sourceTree = "<group>"; };
 		1D43BB572955F38100E46926 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1D43BB5929560C8400E46926 /* UISplitViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISplitViewController+Extensions.swift"; sourceTree = "<group>"; };
 		1D4FC64A297B167100469ACB /* ReusableTableViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableTableViewItem.swift; sourceTree = "<group>"; };
@@ -262,6 +278,8 @@
 		1DA62E28297B639A003C451E /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		1DA62E29297B639A003C451E /* Decimal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Decimal+Extensions.swift"; sourceTree = "<group>"; };
 		1DA62E2A297B639A003C451E /* LegacyExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegacyExtensions.swift; sourceTree = "<group>"; };
+		1DA62E30297B666C003C451E /* Comparable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Comparable+Extensions.swift"; sourceTree = "<group>"; };
+		1DA62E32297B6683003C451E /* WeakProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakProxy.swift; sourceTree = "<group>"; };
 		1DB33E2E296CEEF1008D3A36 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		1DB33E48296DE981008D3A36 /* UIColor.HSBAComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.HSBAComponents.swift; sourceTree = "<group>"; };
 		1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hasher+Extensions.swift"; sourceTree = "<group>"; };
@@ -306,6 +324,15 @@
 		1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
 		1DB33F34296F1F63008D3A36 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LottieAnimationView+Extensions.swift"; sourceTree = "<group>"; };
+		1DB33F3C296F204C008D3A36 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		1DB33F3F296F2071008D3A36 /* UIResponderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIResponderDelegate.swift; sourceTree = "<group>"; };
+		1DB33F40296F2071008D3A36 /* OnboardingLastStepVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingLastStepVC.swift; sourceTree = "<group>"; };
+		1DB33F41296F2071008D3A36 /* FluidPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluidPageControl.swift; sourceTree = "<group>"; };
+		1DB33F42296F2071008D3A36 /* OnboardingOnlyTextStepView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingOnlyTextStepView.swift; sourceTree = "<group>"; };
+		1DB33F43296F2071008D3A36 /* OnboardingLastStepItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingLastStepItemView.swift; sourceTree = "<group>"; };
+		1DB33F44296F2071008D3A36 /* OnboardingRootVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingRootVC.swift; sourceTree = "<group>"; };
+		1DB33F46296F2071008D3A36 /* Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		1DB33F47296F2071008D3A36 /* BasePageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageControl.swift; sourceTree = "<group>"; };
 		1DC6726E26ED17D100CBE954 /* DateFieldItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldItem.swift; sourceTree = "<group>"; };
 		1DC6727026ED18BF00CBE954 /* DateFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldView.swift; sourceTree = "<group>"; };
 		1DC6727326ED1C7400CBE954 /* DependenciesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesStorage.swift; sourceTree = "<group>"; };
@@ -337,6 +364,7 @@
 		1DD4CC3528BA7A1E00DB547C /* TableViewHeaderFooterItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewHeaderFooterItemProtocol.swift; sourceTree = "<group>"; };
 		1DD4CC3C28BA7ED300DB547C /* CACornerMask+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+Extensions.swift"; sourceTree = "<group>"; };
 		1DDD868029761FD200EBB336 /* BodyMassIndexInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMassIndexInfo.swift; sourceTree = "<group>"; };
+		1DDF50D6297B3C0E0049191C /* BasePageControlDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePageControlDelegate.swift; sourceTree = "<group>"; };
 		1DE6DE2428C3BCD300C8B205 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1DE6DE2628C3BCD700C8B205 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1DF99DD428BBC11400085A15 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
@@ -396,6 +424,7 @@
 				1DD4CBE128B166AB00DB547C /* CGFloat+Extensions.swift */,
 				1DD4CC0928B16EA100DB547C /* CGSize+Extensions.swift */,
 				1DD4CC0728B16E7900DB547C /* CGSize.ProportionallySizingError.swift */,
+				1DA62E30297B666C003C451E /* Comparable+Extensions.swift */,
 				1DA62E29297B639A003C451E /* Decimal+Extensions.swift */,
 				1DA62E2A297B639A003C451E /* LegacyExtensions.swift */,
 				1DA62E28297B639A003C451E /* String+Extensions.swift */,
@@ -493,6 +522,15 @@
 			name = "App tab bar";
 			sourceTree = "<group>";
 		};
+		1D3CB3352972D7F3007CF7F4 /* Pomogator face */ = {
+			isa = PBXGroup;
+			children = (
+				1D3CB3372972D80E007CF7F4 /* PomogatorFaceNC.swift */,
+				1D3CB3362972D80E007CF7F4 /* PomogatorFaceVC.swift */,
+			);
+			name = "Pomogator face";
+			sourceTree = "<group>";
+		};
 		1D500A5328C68AAB00E5E011 /* Table view */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +591,8 @@
 			children = (
 				1D86B4052972D9960065DBDE /* Main */,
 				1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */,
+				1D3CB3352972D7F3007CF7F4 /* Pomogator face */,
+				1DB33F3E296F2055008D3A36 /* Onboarding */,
 				1D6CA4CA26E4A9A20065F307 /* Poedator */,
 				1DB33EDC296F1D72008D3A36 /* Vychislyator */,
 			);
@@ -705,6 +745,7 @@
 		1D8F5C6A296CC8BF006ECBD0 /* Convenient hit area view */ = {
 			isa = PBXGroup;
 			children = (
+				1DB33F51296F2080008D3A36 /* Page control */,
 				1DD4CC0B28B16F5100DB547C /* Button.swift */,
 				1D778C4B29744EA400573B6F /* Button.FullConfiguration.swift */,
 				1D8F5C6B296CC8D3006ECBD0 /* ConvenientHitAreaCalculator.swift */,
@@ -891,6 +932,27 @@
 			name = Animations;
 			sourceTree = "<group>";
 		};
+		1DB33F3E296F2055008D3A36 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1DB33F43296F2071008D3A36 /* OnboardingLastStepItemView.swift */,
+				1DB33F40296F2071008D3A36 /* OnboardingLastStepVC.swift */,
+				1DB33F42296F2071008D3A36 /* OnboardingOnlyTextStepView.swift */,
+				1DB33F44296F2071008D3A36 /* OnboardingRootVC.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		1DB33F51296F2080008D3A36 /* Page control */ = {
+			isa = PBXGroup;
+			children = (
+				1DB33F47296F2071008D3A36 /* BasePageControl.swift */,
+				1DDF50D6297B3C0E0049191C /* BasePageControlDelegate.swift */,
+				1DB33F41296F2071008D3A36 /* FluidPageControl.swift */,
+			);
+			name = "Page control";
+			sourceTree = "<group>";
+		};
 		1DC6726D26ED17BF00CBE954 /* Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -918,12 +980,16 @@
 				1DD4CBF828B16C5600DB547C /* Keyboard */,
 				1D95AF4B293159AE000AEEFC /* Image.swift */,
 				1D10C56527008F8100480DBC /* Items */,
+				1DB33F46296F2071008D3A36 /* Layer.swift */,
 				1D98263126EE911B006CF3F9 /* Pomogator.swift */,
 				1D95AF49292FE9EA000AEEFC /* RespondersNavigationFacade.swift */,
 				1D1C3F24297B03A00023D3EC /* ReuseIdentifiable.swift */,
 				1D500A5328C68AAB00E5E011 /* Table view */,
+				1DB33F3F296F2071008D3A36 /* UIResponderDelegate.swift */,
 				1D19F07526EE47AD00211BA4 /* UserDefaultsFacade.swift */,
 				1D98262726EE7D20006CF3F9 /* UserNotificationCenterFacade.swift */,
+				1DA62E32297B6683003C451E /* WeakProxy.swift */,
+				1DB33F3C296F204C008D3A36 /* Window.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1079,6 +1145,7 @@
 				1D2E3067296B228800D37734 /* AppTabBarController.swift in Sources */,
 				1DB33F08296F1D94008D3A36 /* PickerFieldItemPresentable.swift in Sources */,
 				1DB33F11296F1D94008D3A36 /* PlainSpacerItem.SpacerType.swift in Sources */,
+				1DB33F4B296F2071008D3A36 /* OnboardingOnlyTextStepView.swift in Sources */,
 				1DD4CC1528B188B400DB547C /* PlainLabelItem.swift in Sources */,
 				1DF99DD728BBC13200085A15 /* ButtonsView.InitError.swift in Sources */,
 				1DC6726F26ED17D100CBE954 /* DateFieldItem.swift in Sources */,
@@ -1089,6 +1156,7 @@
 				1DB33E2F296CEEF1008D3A36 /* UIColor+Extensions.swift in Sources */,
 				1D4FC64D297B16E800469ACB /* ReusableTableViewHeaderFooterItem.swift in Sources */,
 				1DB33F18296F1D95008D3A36 /* PlainButtonView.swift in Sources */,
+				1DB33F4F296F2071008D3A36 /* Layer.swift in Sources */,
 				1D2E3069296B230500D37734 /* UIImage+Extensions.swift in Sources */,
 				1DB33E49296DE981008D3A36 /* UIColor.HSBAComponents.swift in Sources */,
 				1D19F07926EE4A3400211BA4 /* UserDefaults+Extensions.swift in Sources */,
@@ -1115,6 +1183,7 @@
 				1DD4CBFE28B16CB800DB547C /* TimeInterval+Extensions.swift in Sources */,
 				1D8E4A5626F901BD0036ADD2 /* AppCoordinatorAssembly.swift in Sources */,
 				1DB33F32296F1F39008D3A36 /* SplashScreenVC.swift in Sources */,
+				1DB33F49296F2071008D3A36 /* OnboardingLastStepVC.swift in Sources */,
 				1D63AC8B28CCB2BD00779F9E /* TableViewSection.swift in Sources */,
 				1D43BB582955F38100E46926 /* UIViewController+Extensions.swift in Sources */,
 				1DD4CC0628B16E0D00DB547C /* NSDirectionalEdgeInsets+Extensions.swift in Sources */,
@@ -1138,6 +1207,7 @@
 				1D8F5C70296CCA4F006ECBD0 /* UIEdgeInsets+Extensions.swift in Sources */,
 				1DB33EFF296F1D94008D3A36 /* PlainTextItem.swift in Sources */,
 				1DD4CBE828B168BB00DB547C /* UIView+Extensions.swift in Sources */,
+				1DB33F50296F2071008D3A36 /* BasePageControl.swift in Sources */,
 				1DC6727126ED18BF00CBE954 /* DateFieldView.swift in Sources */,
 				1D1E59AA26E525CE00DCB626 /* PoedatorCalculateMealTimeListVC.swift in Sources */,
 				1DD4CC1728B18C3400DB547C /* PoedatorCalculateMealTimeListSection.swift in Sources */,
@@ -1146,6 +1216,7 @@
 				1D8F5C65296B3FBD006ECBD0 /* BaseAssembly.swift in Sources */,
 				1DB33F0C296F1D94008D3A36 /* PersonSex.swift in Sources */,
 				1DD4CBE228B166AB00DB547C /* CGFloat+Extensions.swift in Sources */,
+				1DB33F4D296F2071008D3A36 /* OnboardingRootVC.swift in Sources */,
 				1D7081CF296A4BCD00EC5DBA /* Array+Extension.swift in Sources */,
 				1DB33F0A296F1D94008D3A36 /* PickerFieldItemDelegate.swift in Sources */,
 				1DD4CBF028B16B0700DB547C /* BaseViewOutput.swift in Sources */,
@@ -1161,6 +1232,7 @@
 				1D9E790728BAC7E800258D30 /* Sequence+Extensions.swift in Sources */,
 				1DD4CC0828B16E7900DB547C /* CGSize.ProportionallySizingError.swift in Sources */,
 				1D36F83629638B250068F423 /* UIView.SameAnchorConstraintsWithInfo.swift in Sources */,
+				1DA62E31297B666C003C451E /* Comparable+Extensions.swift in Sources */,
 				1D778C4E297481E000573B6F /* VychislyatorFormulasListPopoverVC.swift in Sources */,
 				1DD4CC0C28B16F5100DB547C /* Button.swift in Sources */,
 				1DD4CC3228BA784300DB547C /* BlurredView.swift in Sources */,
@@ -1170,17 +1242,21 @@
 				1DDD868129761FD300EBB336 /* BodyMassIndexInfo.swift in Sources */,
 				1DB33F04296F1D94008D3A36 /* PickerFieldItem.swift in Sources */,
 				1D98262A26EE7E83006CF3F9 /* UIApplication+Extensions.swift in Sources */,
+				1DB33F48296F2071008D3A36 /* UIResponderDelegate.swift in Sources */,
 				1D1E59C126E5530900DCB626 /* StringFieldView.swift in Sources */,
 				1DD4CC0428B16D8000DB547C /* UIAlertController+Extensions.swift in Sources */,
 				1D98262626EE7CAB006CF3F9 /* PoedatorMealRemindersManager.swift in Sources */,
 				1DB33F1E296F1D95008D3A36 /* PlainSpacerItem.swift in Sources */,
 				1DB33F12296F1D94008D3A36 /* MifflinStJeorCalculator.swift in Sources */,
+				1DB33F4C296F2071008D3A36 /* OnboardingLastStepItemView.swift in Sources */,
 				1D8E4A5326F901370036ADD2 /* AppCoordinator.swift in Sources */,
 				1DB33F1C296F1D95008D3A36 /* VychislyatorDailyCalorieIntakeFormulasListSection.swift in Sources */,
 				1D6CA4CE26E4A9EC0065F307 /* PoedatorYourMealTimeListVC.EmptyView.swift in Sources */,
 				1D95AF4A292FE9EA000AEEFC /* RespondersNavigationFacade.swift in Sources */,
+				1DB33F4A296F2071008D3A36 /* FluidPageControl.swift in Sources */,
 				1DC6727626ED1E0800CBE954 /* StringFieldItem.Content.swift in Sources */,
 				1D1C3F25297B03A00023D3EC /* ReuseIdentifiable.swift in Sources */,
+				1DA62E33297B6683003C451E /* WeakProxy.swift in Sources */,
 				1D6CA4AE26E49F320065F307 /* AppDelegate.swift in Sources */,
 				1D778C412973782000573B6F /* MainPresenter.swift in Sources */,
 				1DB33F1B296F1D95008D3A36 /* PhysicalActivity.swift in Sources */,
@@ -1196,6 +1272,7 @@
 				1D98263226EE911B006CF3F9 /* Pomogator.swift in Sources */,
 				1DD4CC2C28BA6F5500DB547C /* PlainLabelHeaderItem.swift in Sources */,
 				1DA62E2C297B639A003C451E /* String+Extensions.swift in Sources */,
+				1DDF50D7297B3C0E0049191C /* BasePageControlDelegate.swift in Sources */,
 				1DB33F17296F1D95008D3A36 /* PickerFieldItem.Content.swift in Sources */,
 				1D10C57627009CFB00480DBC /* FieldView.swift in Sources */,
 				1D86B4072972DCEA0065DBDE /* AnyTask.swift in Sources */,
@@ -1205,11 +1282,14 @@
 				1D39EA8C26EE1C3E00EE5F3E /* Font.swift in Sources */,
 				1DD4CC3D28BA7ED300DB547C /* CACornerMask+Extensions.swift in Sources */,
 				1D8F5C6E296CC91A006ECBD0 /* ConvenientHitAreaConfiguration.swift in Sources */,
+				1D3CB3382972D80E007CF7F4 /* PomogatorFaceVC.swift in Sources */,
 				1D39EA8626EDF1A300EE5F3E /* StringFieldItemDelegate.swift in Sources */,
 				1D6335D426FF254C00F9F4F8 /* PoedatorYourMealTimeListAssembly.swift in Sources */,
 				1D5ED0A02975D21C008823FA /* TableViewCellAccessoryInfo.swift in Sources */,
 				1DB33F0F296F1D94008D3A36 /* VychislyatorDailyCalorieIntakeFormulasListAssembly.swift in Sources */,
+				1DB33F3D296F204C008D3A36 /* Window.swift in Sources */,
 				1D500A5528C68E1D00E5E011 /* TableViewItemProtocol.swift in Sources */,
+				1D3CB3392972D80E007CF7F4 /* PomogatorFaceNC.swift in Sources */,
 				1DD4CC2728B2A91100DB547C /* NotificationCenter+Extensions.swift in Sources */,
 				1D6CA4B026E49F320065F307 /* SceneDelegate.swift in Sources */,
 				1DD4CC0A28B16EA100DB547C /* CGSize+Extensions.swift in Sources */,

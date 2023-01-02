@@ -82,6 +82,85 @@ extension UIView {
 	}
 }
 
+@MainActor
+extension Array where Element: UIView {
+	// swiftlint:disable:next function_body_length
+	func makeSameAnchorConstraints(
+		toHorizontalPagingScrollView scrollView: UIScrollView,
+		spacing: CGFloat = 0,
+		info: UIView.ConstraintsMakeInfo? = nil
+	) -> [NSLayoutConstraint] {
+		let info = info ?? .edgesEqual()
+		if !scrollView.isPagingEnabled {
+			assertionFailure("?")
+			return []
+		}
+
+		if isEmpty {
+			assertionFailure("?")
+			return []
+		}
+
+		if count == 1 {
+			// swiftlint:disable:next force_unwrapping
+			return first!.makeSameAnchorConstraints(to: scrollView, info: info)
+		}
+
+		var result = [NSLayoutConstraint]()
+		for (subviewIndex, subview) in enumerated() {
+			var horizontalConstraints = [NSLayoutConstraint]()
+			switch subviewIndex {
+			case firstElementIndex:
+				guard let leadingConstraintMakeInfo = info.leading else {
+					assertionFailure("?")
+					return []
+				}
+
+				let leadingToScrollViewConstraint = leadingConstraintMakeInfo.constraint(
+					firstAnchor: subview.leadingAnchor,
+					secondAnchor: scrollView.contentLayoutGuide.leadingAnchor
+				)
+				horizontalConstraints.append(leadingToScrollViewConstraint)
+
+				let interHorizontalConstraint = subview.trailingAnchor.constraint(
+					equalTo: self[subviewIndex + 1].leadingAnchor,
+					constant: spacing
+				)
+				horizontalConstraints.append(interHorizontalConstraint)
+
+			case lastElementIndex:
+				guard let trailingConstraintMakeInfo = info.trailing else {
+					assertionFailure("?")
+					return []
+				}
+
+				let trailingToScrollViewConstraint = trailingConstraintMakeInfo.constraint(
+					firstAnchor: subview.trailingAnchor,
+					secondAnchor: scrollView.contentLayoutGuide.trailingAnchor
+				)
+				horizontalConstraints.append(trailingToScrollViewConstraint)
+
+			default:
+				let interHorizontalConstraint = subview.trailingAnchor.constraint(
+					equalTo: self[subviewIndex + 1].leadingAnchor,
+					constant: spacing
+				)
+				horizontalConstraints.append(interHorizontalConstraint)
+			}
+
+			result += horizontalConstraints + [
+				subview.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
+				subview.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
+
+				subview.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor),
+				subview.heightAnchor.constraint(equalTo: scrollView.frameLayoutGuide.heightAnchor)
+			]
+		}
+
+		return result
+	}
+}
+
 // MARK: - Hierarchies extensions
 
 extension UIView {

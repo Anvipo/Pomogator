@@ -22,6 +22,8 @@ enum Image {
 
 	case numberOfMealTimes
 
+	case onboardingPomogatorHead
+
 	case pencil
 	case personTextRectangle
 	case plus
@@ -36,6 +38,7 @@ enum Image {
 	case trash
 
 	case vychislyator
+	case xmarkCircleFill
 }
 
 extension Image {
@@ -69,6 +72,9 @@ extension Image {
 		case .numberOfMealTimes:
 			image = UIImage(named: "NumberOfMealTimes")
 
+		case .onboardingPomogatorHead:
+			image = UIImage(named: "OnboardingPomogatorsHead")
+
 		case .pencil:
 			image = UIImage(systemName: "pencil")
 
@@ -95,6 +101,9 @@ extension Image {
 
 		case .vychislyator:
 			image = UIImage(named: "Vychislyator")
+
+		case .xmarkCircleFill:
+			image = UIImage(systemName: "xmark.circle.fill")
 		}
 
 		if image == nil {
