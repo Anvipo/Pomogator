@@ -114,6 +114,7 @@
 		1D778C4A2973805800573B6F /* MainCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D778C492973805800573B6F /* MainCoordinatorAssembly.swift */; };
 		1D778C4C29744EA400573B6F /* Button.FullConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D778C4B29744EA400573B6F /* Button.FullConfiguration.swift */; };
 		1D7915D7293B915300F04B25 /* PoedatorCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7915D6293B915200F04B25 /* PoedatorCoordinatorDelegate.swift */; };
+		1D7B782B29834FD30016F258 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D7B782A29834FD30016F258 /* Lottie */; };
 		1D86B4072972DCEA0065DBDE /* AnyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D86B4062972DCEA0065DBDE /* AnyTask.swift */; };
 		1D88D17C297D31AF009BF4F2 /* PoedatorUserDefaultsFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D88D17B297D31AF009BF4F2 /* PoedatorUserDefaultsFacade.swift */; };
 		1D8D0A9128C3D31B00881205 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D8D0A8F28C3D31A00881205 /* Localizable.strings */; };
@@ -138,6 +139,10 @@
 		1DB33E49296DE981008D3A36 /* UIColor.HSBAComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33E48296DE981008D3A36 /* UIColor.HSBAComponents.swift */; };
 		1DB33E7C296E2AD9008D3A36 /* Hasher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */; };
 		1DB33E80296E2BD1008D3A36 /* Result+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33E7F296E2BD1008D3A36 /* Result+Extensions.swift */; };
+		1DB33F30296F1F16008D3A36 /* SplashScreenAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DB33F2F296F1F16008D3A36 /* SplashScreenAnimation.json */; };
+		1DB33F32296F1F39008D3A36 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */; };
+		1DB33F35296F1F63008D3A36 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F34296F1F63008D3A36 /* Animation.swift */; };
+		1DB33F37296F1F73008D3A36 /* LottieAnimationView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */; };
 		1DB9E24D29819B2C0034FBD4 /* IAppTabBarControllerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E24C29819B2C0034FBD4 /* IAppTabBarControllerOutput.swift */; };
 		1DB9E24F29819F5B0034FBD4 /* IRestorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB9E24E29819F5B0034FBD4 /* IRestorable.swift */; };
 		1DC4E33B2973281700EC6846 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC4E33A2973281700EC6846 /* MainVC.swift */; };
@@ -321,6 +326,10 @@
 		1DB33E48296DE981008D3A36 /* UIColor.HSBAComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.HSBAComponents.swift; sourceTree = "<group>"; };
 		1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hasher+Extensions.swift"; sourceTree = "<group>"; };
 		1DB33E7F296E2BD1008D3A36 /* Result+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extensions.swift"; sourceTree = "<group>"; };
+		1DB33F2F296F1F16008D3A36 /* SplashScreenAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashScreenAnimation.json; sourceTree = "<group>"; };
+		1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		1DB33F34296F1F63008D3A36 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LottieAnimationView+Extensions.swift"; sourceTree = "<group>"; };
 		1DB9E24C29819B2C0034FBD4 /* IAppTabBarControllerOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAppTabBarControllerOutput.swift; sourceTree = "<group>"; };
 		1DB9E24E29819F5B0034FBD4 /* IRestorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRestorable.swift; sourceTree = "<group>"; };
 		1DC4E33A2973281700EC6846 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -375,6 +384,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7B782B29834FD30016F258 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +611,7 @@
 				1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */,
 				1D36F8372963A9120068F423 /* LayoutConstraintRelation.swift */,
 				1D0ACC662981D17F009464B5 /* LegacyExtensions.swift */,
+				1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */,
 				1DD4CC2628B2A91100DB547C /* NotificationCenter+Extensions.swift */,
 				1DD4CC0528B16E0D00DB547C /* NSDirectionalEdgeInsets+Extensions.swift */,
 				1DB33E7F296E2BD1008D3A36 /* Result+Extensions.swift */,
@@ -752,6 +763,7 @@
 			isa = PBXGroup;
 			children = (
 				1D86B4052972D9960065DBDE /* Main */,
+				1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */,
 				1D6CA4CA26E4A9A20065F307 /* Poedator */,
 				1D0ACC922981D1DC009464B5 /* Vychislyator */,
 			);
@@ -900,6 +912,7 @@
 		1D8D0A8E28C3D25C00881205 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DB33F2E296F1F0A008D3A36 /* Animations */,
 				1D6CA4B626E49F340065F307 /* Assets.xcassets */,
 				1D6CA4BB26E49F340065F307 /* Info.plist */,
 				1DE6DE2528C3BCD300C8B205 /* InfoPlist.strings */,
@@ -951,6 +964,14 @@
 			name = "Plain label";
 			sourceTree = "<group>";
 		};
+		1DB33F2E296F1F0A008D3A36 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1DB33F2F296F1F16008D3A36 /* SplashScreenAnimation.json */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 		1DB9E24929819A4B0034FBD4 /* Restore */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,6 +995,7 @@
 		1DC6727226ED1C6000CBE954 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1DB33F34296F1F63008D3A36 /* Animation.swift */,
 				1D86B4062972DCEA0065DBDE /* AnyTask.swift */,
 				1D19F07126EE475600211BA4 /* Appearance */,
 				1D6CA4D526E4BBD50065F307 /* Base */,
@@ -1035,6 +1057,9 @@
 			dependencies = (
 			);
 			name = Pomogator;
+			packageProductDependencies = (
+				1D7B782A29834FD30016F258 /* Lottie */,
+			);
 			productName = Pomogator;
 			productReference = 1D6CA4AA26E49F320065F307 /* Pomogator.app */;
 			productType = "com.apple.product-type.application";
@@ -1066,6 +1091,9 @@
 				Base,
 			);
 			mainGroup = 1D6CA4A126E49F320065F307;
+			packageReferences = (
+				1D7B782929834FD30016F258 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = 1D6CA4AB26E49F320065F307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1083,6 +1111,7 @@
 			files = (
 				1DE6DE2328C3BCD300C8B205 /* InfoPlist.strings in Resources */,
 				1D36F823296367360068F423 /* LaunchScreen.storyboard in Resources */,
+				1DB33F30296F1F16008D3A36 /* SplashScreenAnimation.json in Resources */,
 				1D8D0A9128C3D31B00881205 /* Localizable.strings in Resources */,
 				1D6CA4B726E49F340065F307 /* Assets.xcassets in Resources */,
 			);
@@ -1172,6 +1201,7 @@
 				1D0ACC7D2981D180009464B5 /* VychislyatorBodyMassIndexAssembly.swift in Sources */,
 				1DD4CC1028B1705100DB547C /* UIScrollView+Extensions.swift in Sources */,
 				1D0ACC712981D180009464B5 /* PickerFieldView.swift in Sources */,
+				1DB33F35296F1F63008D3A36 /* Animation.swift in Sources */,
 				1DD4CBEE28B1697D00DB547C /* UIView.ConstraintsMakeInfo.swift in Sources */,
 				1DC6727826ED1EA400CBE954 /* DateFieldItem.Content.swift in Sources */,
 				1D0ACC782981D180009464B5 /* PlainTextItem.swift in Sources */,
@@ -1179,6 +1209,7 @@
 				1D95AF4E29316B34000AEEFC /* TableViewSection.InitError.swift in Sources */,
 				1DD4CBFE28B16CB800DB547C /* TimeInterval+Extensions.swift in Sources */,
 				1D8E4A5626F901BD0036ADD2 /* AppCoordinatorAssembly.swift in Sources */,
+				1DB33F32296F1F39008D3A36 /* SplashScreenVC.swift in Sources */,
 				1D63AC8B28CCB2BD00779F9E /* TableViewSection.swift in Sources */,
 				1D43BB582955F38100E46926 /* UIViewController+Extensions.swift in Sources */,
 				1DD4CC0628B16E0D00DB547C /* NSDirectionalEdgeInsets+Extensions.swift in Sources */,
@@ -1215,6 +1246,7 @@
 				1D88D17C297D31AF009BF4F2 /* PoedatorUserDefaultsFacade.swift in Sources */,
 				1D1E59AA26E525CE00DCB626 /* PoedatorCalculateMealTimeScheduleVC.swift in Sources */,
 				1DD4CC1728B18C3400DB547C /* PoedatorCalculateMealTimeScheduleSection.swift in Sources */,
+				1DB33F37296F1F73008D3A36 /* LottieAnimationView+Extensions.swift in Sources */,
 				1D8F5C65296B3FBD006ECBD0 /* BaseAssembly.swift in Sources */,
 				1DD4CBE228B166AB00DB547C /* CGFloat+Extensions.swift in Sources */,
 				1D0ACC8F2981D180009464B5 /* String+Extensions.swift in Sources */,
@@ -1548,6 +1580,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D7B782929834FD30016F258 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D7B782A29834FD30016F258 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D7B782929834FD30016F258 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D6CA4A226E49F320065F307 /* Project object */;
 }

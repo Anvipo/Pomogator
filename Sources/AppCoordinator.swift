@@ -58,23 +58,25 @@ extension AppCoordinator {
 			return
 		}
 
-		showAppTabBar()
-
 		switch startOption {
 		case .ordinaryLaunch:
-			break
+			window.rootViewController = assembly.splashScreenVC { [weak self] in
+				self?.showAppTabBar(addTransition: true)
+			}
 
 		case .fromRestore(let stateRestorationActivity):
+			showAppTabBar(addTransition: false)
 			restore(from: stateRestorationActivity)
 
 		case .fromSpotlight(let searchableItemActivityIdentifier):
+			showAppTabBar(addTransition: false)
 			showTab(for: searchableItemActivityIdentifier)
 		}
 
 		window.makeKeyAndVisible()
 	}
 
-	func showAppTabBar() {
+	func showAppTabBar(addTransition: Bool) {
 		guard let application,
 			  let device,
 			  let window,
@@ -112,6 +114,10 @@ extension AppCoordinator {
 		]
 
 		window.rootViewController = appTabBarController
+
+		if addTransition {
+			window.addCurlUpTransition(duration: 0.5)
+		}
 
 		mainCoordinator.startFlow(from: mainTransitionHandler)
 		poedatorCoordinator.startFlow(from: poedatorTransitionHandler)

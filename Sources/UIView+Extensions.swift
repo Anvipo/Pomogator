@@ -132,6 +132,20 @@ extension UIView {
 // MARK: - Animations extension
 
 extension UIView {
+	func addCurlUpTransition(
+		duration: TimeInterval = .defaultAnimationDuration,
+		animations: (() -> Void)? = nil,
+		completion: ((Bool) -> Void)? = nil
+	) {
+		Self.transition(
+			with: self,
+			duration: duration,
+			options: [.transitionCurlUp, .curveEaseInOut],
+			animations: animations,
+			completion: completion
+		)
+	}
+
 	func set(
 		backgroundColor: UIColor?,
 		animated: Bool,
