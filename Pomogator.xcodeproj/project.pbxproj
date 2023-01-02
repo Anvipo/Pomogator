@@ -132,6 +132,11 @@
 		1DC4E33B2973281700EC6846 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC4E33A2973281700EC6846 /* MainVC.swift */; };
 		1DC4E33D29732AA200EC6846 /* AnyTableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC4E33C29732AA200EC6846 /* AnyTableViewItem.swift */; };
 		1DC501E7297AD572003973F1 /* KeyboardNotification.Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC501E6297AD572003973F1 /* KeyboardNotification.Name.swift */; };
+		1DB33F30296F1F16008D3A36 /* SplashScreenAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DB33F2F296F1F16008D3A36 /* SplashScreenAnimation.json */; };
+		1DB33F32296F1F39008D3A36 /* SplashScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */; };
+		1DB33F35296F1F63008D3A36 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F34296F1F63008D3A36 /* Animation.swift */; };
+		1DB33F37296F1F73008D3A36 /* LottieAnimationView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */; };
+		1DB33F3A296F1FF0008D3A36 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1DB33F39296F1FF0008D3A36 /* Lottie */; };
 		1DC6726F26ED17D100CBE954 /* DateFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6726E26ED17D100CBE954 /* DateFieldItem.swift */; };
 		1DC6727126ED18BF00CBE954 /* DateFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6727026ED18BF00CBE954 /* DateFieldView.swift */; };
 		1DC6727426ED1C7400CBE954 /* DependenciesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6727326ED1C7400CBE954 /* DependenciesStorage.swift */; };
@@ -297,6 +302,10 @@
 		1DC4E33A2973281700EC6846 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		1DC4E33C29732AA200EC6846 /* AnyTableViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTableViewItem.swift; sourceTree = "<group>"; };
 		1DC501E6297AD572003973F1 /* KeyboardNotification.Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.Name.swift; sourceTree = "<group>"; };
+		1DB33F2F296F1F16008D3A36 /* SplashScreenAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashScreenAnimation.json; sourceTree = "<group>"; };
+		1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenVC.swift; sourceTree = "<group>"; };
+		1DB33F34296F1F63008D3A36 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LottieAnimationView+Extensions.swift"; sourceTree = "<group>"; };
 		1DC6726E26ED17D100CBE954 /* DateFieldItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldItem.swift; sourceTree = "<group>"; };
 		1DC6727026ED18BF00CBE954 /* DateFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFieldView.swift; sourceTree = "<group>"; };
 		1DC6727326ED1C7400CBE954 /* DependenciesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesStorage.swift; sourceTree = "<group>"; };
@@ -339,6 +348,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB33F3A296F1FF0008D3A36 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +403,8 @@
 				1D8F5C7F296CE187006ECBD0 /* HasConvenientAddAction.swift */,
 				1DB33E7B296E2AD9008D3A36 /* Hasher+Extensions.swift */,
 				1D36F8372963A9120068F423 /* LayoutConstraintRelation.swift */,
+				1DB33E4A296DF788008D3A36 /* LegacyExtensions.swift */,
+				1DB33F36296F1F73008D3A36 /* LottieAnimationView+Extensions.swift */,
 				1DD4CC2628B2A91100DB547C /* NotificationCenter+Extensions.swift */,
 				1DD4CC0528B16E0D00DB547C /* NSDirectionalEdgeInsets+Extensions.swift */,
 				1DB33E7F296E2BD1008D3A36 /* Result+Extensions.swift */,
@@ -540,6 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				1D86B4052972D9960065DBDE /* Main */,
+				1DB33F31296F1F39008D3A36 /* SplashScreenVC.swift */,
 				1D6CA4CA26E4A9A20065F307 /* Poedator */,
 				1DB33EDC296F1D72008D3A36 /* Vychislyator */,
 			);
@@ -670,6 +683,7 @@
 		1D8D0A8E28C3D25C00881205 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DB33F2E296F1F0A008D3A36 /* Animations */,
 				1D6CA4B626E49F340065F307 /* Assets.xcassets */,
 				1D6CA4BB26E49F340065F307 /* Info.plist */,
 				1DE6DE2528C3BCD300C8B205 /* InfoPlist.strings */,
@@ -869,6 +883,14 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		1DB33F2E296F1F0A008D3A36 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1DB33F2F296F1F16008D3A36 /* SplashScreenAnimation.json */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 		1DC6726D26ED17BF00CBE954 /* Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,6 +905,7 @@
 		1DC6727226ED1C6000CBE954 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1DB33F34296F1F63008D3A36 /* Animation.swift */,
 				1D86B4062972DCEA0065DBDE /* AnyTask.swift */,
 				1D19F07126EE475600211BA4 /* Appearance */,
 				1D6CA4D526E4BBD50065F307 /* Base */,
@@ -941,6 +964,9 @@
 			dependencies = (
 			);
 			name = Pomogator;
+			packageProductDependencies = (
+				1DB33F39296F1FF0008D3A36 /* Lottie */,
+			);
 			productName = Pomogator;
 			productReference = 1D6CA4AA26E49F320065F307 /* Pomogator.app */;
 			productType = "com.apple.product-type.application";
@@ -972,6 +998,9 @@
 				Base,
 			);
 			mainGroup = 1D6CA4A126E49F320065F307;
+			packageReferences = (
+				1DB33F38296F1FF0008D3A36 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 1D6CA4AB26E49F320065F307 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -989,6 +1018,7 @@
 			files = (
 				1DE6DE2328C3BCD300C8B205 /* InfoPlist.strings in Resources */,
 				1D36F823296367360068F423 /* LaunchScreen.storyboard in Resources */,
+				1DB33F30296F1F16008D3A36 /* SplashScreenAnimation.json in Resources */,
 				1D8D0A9128C3D31B00881205 /* Localizable.strings in Resources */,
 				1D6CA4B726E49F340065F307 /* Assets.xcassets in Resources */,
 			);
@@ -1070,6 +1100,7 @@
 				1DC4E33B2973281700EC6846 /* MainVC.swift in Sources */,
 				1D9E790528BAB9C600258D30 /* PoedatorYourMealTimeListSection.swift in Sources */,
 				1DD4CC1028B1705100DB547C /* UIScrollView+Extensions.swift in Sources */,
+				1DB33F35296F1F63008D3A36 /* Animation.swift in Sources */,
 				1DD4CBEE28B1697D00DB547C /* UIView.ConstraintsMakeInfo.swift in Sources */,
 				1DB33F10296F1D94008D3A36 /* VychislyatorFormulasListAssembly.swift in Sources */,
 				1DB33F09296F1D94008D3A36 /* VychislyatorBodyMassIndexAssembly.swift in Sources */,
@@ -1083,6 +1114,7 @@
 				1DB33F16296F1D94008D3A36 /* PlainLabelFooterItem.swift in Sources */,
 				1DD4CBFE28B16CB800DB547C /* TimeInterval+Extensions.swift in Sources */,
 				1D8E4A5626F901BD0036ADD2 /* AppCoordinatorAssembly.swift in Sources */,
+				1DB33F32296F1F39008D3A36 /* SplashScreenVC.swift in Sources */,
 				1D63AC8B28CCB2BD00779F9E /* TableViewSection.swift in Sources */,
 				1D43BB582955F38100E46926 /* UIViewController+Extensions.swift in Sources */,
 				1DD4CC0628B16E0D00DB547C /* NSDirectionalEdgeInsets+Extensions.swift in Sources */,
@@ -1109,6 +1141,7 @@
 				1DC6727126ED18BF00CBE954 /* DateFieldView.swift in Sources */,
 				1D1E59AA26E525CE00DCB626 /* PoedatorCalculateMealTimeListVC.swift in Sources */,
 				1DD4CC1728B18C3400DB547C /* PoedatorCalculateMealTimeListSection.swift in Sources */,
+				1DB33F37296F1F73008D3A36 /* LottieAnimationView+Extensions.swift in Sources */,
 				1DB33F00296F1D94008D3A36 /* VychislyatorDailyCalorieIntakeFormulasListPresenter.swift in Sources */,
 				1D8F5C65296B3FBD006ECBD0 /* BaseAssembly.swift in Sources */,
 				1DB33F0C296F1D94008D3A36 /* PersonSex.swift in Sources */,
@@ -1434,6 +1467,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DB33F38296F1FF0008D3A36 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1DB33F39296F1FF0008D3A36 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DB33F38296F1FF0008D3A36 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D6CA4A226E49F320065F307 /* Project object */;
 }

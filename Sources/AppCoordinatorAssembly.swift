@@ -19,6 +19,10 @@ extension AppCoordinatorAssembly {
 		return tabBarController
 	}
 
+	func splashScreenVC(completion: @escaping () -> Void) -> UIViewController {
+		SplashScreenVC(completion: completion)
+	}
+
 	func coordinator(
 		application: UIApplication,
 		device: UIDevice,

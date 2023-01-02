@@ -69,11 +69,14 @@ extension AppCoordinator {
 			return
 		}
 
-		showAppTabBar()
+		window.rootViewController = assembly.splashScreenVC { [weak self] in
+			self?.showAppTabBar()
+		}
 		window.makeKeyAndVisible()
+		window.addFadeTransition()
 	}
 
-	func showAppTabBar() {
+	func showAppTabBar(completion: (() -> Void)? = nil) {
 		guard let application,
 			  let device,
 			  let window,
@@ -110,6 +113,10 @@ extension AppCoordinator {
 		]
 
 		window.rootViewController = appTabBarController
+		// swiftlint:disable:next trailing_closure
+		window.addFadeTransition(completion: { _ in
+			completion?()
+		})
 
 		mainCoordinator.startFlow(from: mainTransitionHandler)
 		poedatorCoordinator.startFlow(from: poedatorTransitionHandler)
