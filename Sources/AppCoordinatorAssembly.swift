@@ -14,7 +14,27 @@ extension AppCoordinatorAssembly {
 		let tabBarController = AppTabBarController(
 			didChangeScreenFeedbackGenerator: dependenciesStorage.didChangeScreenFeedbackGenerator
 		)
-		tabBarController.tabBar.tintColor = Color.brand.uiColor
+
+		let stackedAppearance = UITabBarItemAppearance(style: .stacked)
+		stackedAppearance.normal.iconColor = .black
+		stackedAppearance.normal.titleTextAttributes = [
+			.foregroundColor: stackedAppearance.normal.iconColor
+		]
+		stackedAppearance.selected.iconColor = .white
+		stackedAppearance.selected.titleTextAttributes = [
+			.foregroundColor: stackedAppearance.selected.iconColor
+		]
+
+		let appearance = UITabBarAppearance()
+		appearance.stackedLayoutAppearance = stackedAppearance
+		appearance.inlineLayoutAppearance = stackedAppearance
+		appearance.compactInlineLayoutAppearance = stackedAppearance
+
+		appearance.configureWithTransparentBackground()
+//		appearance.backgroundEffect = UIBlurEffect(style: .systemUltraThinMaterial)
+
+		tabBarController.tabBar.standardAppearance = appearance
+		tabBarController.tabBar.scrollEdgeAppearance = appearance
 
 		return tabBarController
 	}

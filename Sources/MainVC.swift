@@ -113,12 +113,12 @@ private extension MainVC {
 	}
 
 	func setupUI() {
-		view.backgroundColor = .systemGroupedBackground
 		navigationItem.title = String(localized: "Main")
 
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: .cellReuseID)
 		tableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: .headerFooterViewReuseID)
 		tableView.delegate = self
+		tableView.backgroundColor = nil
 
 		view.addSubviewsForConstraintsUse([tableView])
 

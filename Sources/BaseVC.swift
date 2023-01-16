@@ -13,6 +13,8 @@ class BaseVC: UIViewController {
 
 	private(set) final var isViewVisible: Bool
 
+	private lazy var gradientLayer = CAGradientLayer()
+
 	init(output: BaseViewOutput? = nil) {
 		self.output = output
 		isViewVisible = false
@@ -38,7 +40,11 @@ class BaseVC: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		view.backgroundColor = .systemBackground
+		view.backgroundColor = .systemGroupedBackground
+
+		gradientLayer.colors = [view.backgroundColor!.cgColor, Color.brand.uiColor.cgColor]
+		gradientLayer.locations = [0.5, 1]
+		view.layer.insertSublayer(gradientLayer, at: 0)
 
 		guard let navigationController else {
 			return
@@ -62,6 +68,11 @@ class BaseVC: UIViewController {
 			navigationController.popViewController(animated: true)
 			self.output?.didTapBackButton()
 		}
+	}
+
+	override func viewDidLayoutSubviews() {
+		super.viewDidLayoutSubviews()
+		gradientLayer.frame = view.bounds
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
